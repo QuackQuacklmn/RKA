@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+section {
+    padding: 40px;
+}
+
+img {
+    width: 80%;
+    max-width: 600px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.team-row:first-child {
+    max-width: 80%; /* Adjusts the width of the first row */
+}
+
+.team-row:last-child {
+    max-width: 65%; /* Makes the second row a bit narrower for even spacing */
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+    width: 100px; /* Adjust as needed */
+    height: 100px;
+    border-radius: 50%; /* Circular images */
+}
