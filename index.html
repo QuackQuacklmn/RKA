@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robokings Aurum #12993</title>
     <link rel="stylesheet" href="styles.css">
-</head>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -18,6 +17,9 @@
             });
         });
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
 
 <body>
     <header>
@@ -25,30 +27,29 @@
     </header>
 
     <header class="hero">
-        <div class="hero-content">
-            <h1>Welcome to RoboKings Aurum</h1>
-            <p>Innovating. Engineering. Winning.</p>
-            <a href="#about" class="btn">Learn More</a>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>RoboKings Aurum</h1>
+                <p>Innovating. Engineering. Winning.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
         </div>
     </header>
     
+    
 
     <nav class="navbar">
-        <div class="logo">RoboKings Aurum</div>
+        <div class="logo">RKA</div>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#team">Meet the Team</a></li>
+            <li><a href="#team">Team</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="#videos">Videos</a></li>
-            <li><a href="#outreach">Outreach</a></li>
-            <li><a href="#meetings">Book a Meeting</a></li>
-            <li><a href="#stats">Live Stats</a></li>
-            <li><a href="#reveal">Robot Reveal</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    
     
 
     <section id="about">
@@ -64,16 +65,17 @@
 
     <section id="team">
         <h2>Meet the Team</h2>
-        <div class="team-grid">
-            <div class="member"><img src="images/Grace.jpg"><p>Grace</p></div>
-            <div class="member"><img src="images/Sean.jpg"><p>Sean</p></div>
-            <div class="member"><img src="images/Tinko.jpg"><p>Tinko</p></div>
-            <div class="member"><img src="images/Raf.jpg"><p>Raf</p></div>
-            <div class="member"><img src="images/Jackson.jpg"><p>Jackson</p></div>
-            <div class="member"><img src="images/Samiha.jpg"><p>Samiha</p></div>
-            <div class="member"><img src="images/Dean.jpg"><p>Dean</p></div>
-            <div class="member"><img src="images/Shanti.jpg"><p>Shanti</p></div>
-            <div class="member"><img src="images/Zane.jpg"><p>Zane</p></div>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="images/Grace.jpg" alt="Grace">
+                <h3>Grace</h3>
+                <p>Team Role: Builder</p>
+            </div>
+            <div class="team-card">
+                <img src="images/Sean.jpg" alt="Sean">
+                <h3>Sean</h3>
+                <p>Team Role: Programmer</p>
+            </div>
         </div>
     </section>
     
