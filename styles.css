@@ -1,168 +1,32 @@
+/* Global Styles */
 body {
-    body {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #121212;
-        color: white;
-        margin: 0;
-        padding: 0;
-    }
-    
-    h1, h2, h3 {
-        font-family: 'Orbitron', sans-serif;
-        color: #FFD700;
-    }
-    
-    a {
-        color: #FFD700;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    
-    a:hover {
-        color: white;
-    }
-    
-}
-
-header {
-    background-color: #222;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
     color: white;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Prevents navbar from overlapping content */
 }
 
-nav ul {
-    list-style: none;
-    padding: 10px;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #FFD700;
 }
 
-nav ul li {
-    display: inline;
-    margin: 10px;
-}
-
-nav ul li a {
+a {
+    color: #FFD700;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
     color: white;
-    font-size: 18px;
-    padding: 10px;
-    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-img {
-    width: 80%;
-    max-width: 100px;
-}
-
-#about {
-    background-color: black; /* Sets background to black */
-    padding: 40px; /* Adds spacing around the section */
-    text-align: center; /* Centers content */
-}
-
-#about h2 {
-    color: gold; /* Makes "About Our Team" gold */
-    font-size: 2em; /* Increases heading size */
-    font-weight: bold; /* Ensures it's bold */
-}
-
-#about p {
-    color: white; /* Makes description text white */
-    font-size: 1.2em; /* Slightly larger text */
-    max-width: 80%; /* Ensures it doesn’t stretch too wide */
-    margin: 10px auto; /* Centers the text */
-}
-
-#about img {
-    width: 100%; /* Ensures image spans full width */
-    max-width: 800px; /* Keeps it from getting too huge on large screens */
-    display: block; /* Removes extra spacing */
-    margin: 20px auto; /* Centers the image */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-}
-
-#sponsors {
-    background-color: rgb(12, 12, 12);
-    color: rgb(209, 163, 10);
-    padding: 20px;
-    text-align: center;
-    overflow: hidden; /* Ensures nothing overflows */
-}
-
-#sponsors img {
-    max-width: 80%; /* Ensures the image resizes within the box */
-    height: auto; /* Keeps aspect ratio */
-    display: block;
-    margin: 0 auto; /* Centers the image */
-    object-fit: contain; /* Ensures the whole image fits without cropping */
-}
-
-.team-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-}
-
-.team-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-}
-
-.team-row:first-child {
-    max-width: 90%; /* Adjusted to fit 5 members */
-    display: flex;
-    justify-content: center;
-}
-
-.team-row:last-child {
-    max-width: 75%; /* Adjusted to fit 4 members */
-    display: flex;
-    justify-content: center;
-}
-
-.member {
-    text-align: center;
-    max-width: 150px;
-    flex: 1;
-}
-
-.member img {
-    width: 120px; /* Adjust as needed */
-    height: 170px;
-    border-radius: 50%; /* Circular images */
-    border: 3px solid #09090a;
-}
-
-
-@media (max-width: 768px) {
-    .team-row {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+/* Sticky Navbar */
 .navbar {
     position: fixed;
+    top: 0;
     width: 100%;
     background: rgba(18, 18, 18, 0.9);
     display: flex;
@@ -170,6 +34,7 @@ img {
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 .logo {
@@ -183,6 +48,8 @@ img {
     list-style: none;
     display: flex;
     gap: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar ul li {
@@ -192,6 +59,7 @@ img {
 .navbar ul li a {
     color: white;
     font-weight: bold;
+    padding: 10px;
     transition: 0.3s;
 }
 
@@ -200,11 +68,7 @@ img {
     text-shadow: 0 0 5px gold;
 }
 
-
-body {
-    padding-top: 60px; /* Prevents navbar from overlapping content */
-}
-
+/* Hero Section */
 .hero {
     position: relative;
     background: url('images/hero-bg.jpg') center/cover no-repeat;
@@ -214,7 +78,7 @@ body {
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    background: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -231,92 +95,119 @@ body {
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.hero h2 {
-    font-size: 2rem;
-    font-family: 'Georgia', serif;
-    color: #d9a404; /* Regal gold */
-    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.3rem;
-    font-style: italic;
-    color: #f5d36b; /* Softer gold */
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 .btn {
     display: inline-block;
+    background: #FFD700;
+    color: #121212;
     padding: 10px 20px;
-    background: #d9a404;
-    color: black;
     font-weight: bold;
-    text-decoration: none;
+    text-transform: uppercase;
     border-radius: 5px;
-    transition: background 0.3s ease-in-out;
+    margin-top: 15px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #f5d36b;
+    background: white;
+    color: #121212;
 }
 
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+/* About Section */
+#about {
+    background-color: black;
+    padding: 40px;
     text-align: center;
+}
+
+#about h2 {
+    color: gold;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#about p {
+    color: white;
+    font-size: 1.2em;
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+#about img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Sponsors Section */
+#sponsors {
+    background-color: rgb(12, 12, 12);
+    color: rgb(209, 163, 10);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#sponsors img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* Team Section */
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.team-row:first-child {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.team-row:last-child {
+    max-width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.member {
+    text-align: center;
+    max-width: 150px;
+    flex: 1;
 }
 
 .member img {
-    width: 100%;
-    border-radius: 50%;
-    transition: transform 0.3s;
-}
-
-.member img:hover {
-    transform: scale(1.1);
-}
-
-.sponsor-logos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.sponsor-logos img {
-    max-width: 150px;
-    transition: 0.3s;
-}
-
-.sponsor-logos img:hover {
-    transform: scale(1.1);
-}
-.team-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team-card {
-    background: rgba(255, 215, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.team-card:hover {
-    background: rgba(255, 215, 0, 0.3);
-    transform: scale(1.05);
-}
-
-.team-card img {
     width: 120px;
+    height: 170px;
     border-radius: 50%;
+    border: 3px solid #09090a;
+}
+
+@media (max-width: 768px) {
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+    }
 }
