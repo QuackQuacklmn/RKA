@@ -1,213 +1,155 @@
-/* Global Styles */
+/* General body styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #121212;
-    color: white;
     margin: 0;
     padding: 0;
-    padding-top: 60px; /* Prevents navbar from overlapping content */
+    background-color: #f4f4f4;
 }
 
-h1, h2, h3 {
-    font-family: 'Orbitron', sans-serif;
-    color: #FFD700;
-}
-
-a {
-    color: #FFD700;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #333;
     color: white;
+    padding: 20px 0;
 }
 
-/* Sticky Navbar */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(18, 18, 18, 0.9);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #FFD700;
-    font-family: 'Orbitron', sans-serif;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar ul li {
-    display: inline;
-}
-
-.navbar ul li a {
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    transition: 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #FFD700;
-    text-shadow: 0 0 5px gold;
-}
-
-/* Hero Section */
 .hero {
     position: relative;
-    background: url('images/hero-bg.jpg') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 150px 20px;
+    height: 500px;
+    background: url('images/hero-bg.jpg') center center no-repeat;
+    background-size: cover;
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.hero h1, .hero h2, .hero p {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin-top: 10px;
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.btn {
-    display: inline-block;
-    background: #FFD700;
-    color: #121212;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 5px;
-    margin-top: 15px;
-    transition: 0.3s;
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.btn:hover {
-    background: white;
-    color: #121212;
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar a:hover {
+    color: #f0a500;
+}
+
+/* Styling for sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
 /* About Section */
 #about {
-    background-color: black;
-    padding: 40px;
-    text-align: center;
+    background-color: #fff;
+    color: #333;
 }
 
-#about h2 {
-    color: gold;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-#about p {
-    color: white;
-    font-size: 1.2em;
-    max-width: 80%;
-    margin: 10px auto;
-}
-
-#about img {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-/* Sponsors Section */
 #sponsors {
     background-color: rgb(12, 12, 12);
     color: rgb(209, 163, 10);
     padding: 20px;
     text-align: center;
-    overflow: hidden;
 }
 
-#sponsors img {
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    object-fit: contain;
+.sponsor-logos img {
+    margin: 10px;
+    height: 100px;
+}
+
+/* Timeline Section */
+#timeline {
+    background-color: #ececec;
+    color: #333;
 }
 
 /* Team Section */
-.team-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+#team {
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-.team-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
+/* Gallery Section */
+#gallery {
+    background-color: #fff;
+    color: #333;
 }
 
-.team-row:first-child {
-    max-width: 90%;
-    display: flex;
-    justify-content: center;
+/* Video Section */
+#videos {
+    background-color: #ececec;
+    color: #333;
 }
 
-.team-row:last-child {
-    max-width: 75%;
-    display: flex;
-    justify-content: center;
+/* Outreach Section */
+#outreach {
+    background-color: #fff;
+    color: #333;
 }
 
-.member {
-    text-align: center;
-    max-width: 150px;
-    flex: 1;
+/* Meetings Section */
+#meetings {
+    background-color: #ececec;
+    color: #333;
 }
 
-.member img {
-    width: 120px;
-    height: 170px;
-    border-radius: 50%;
-    border: 3px solid #09090a;
+/* Stats Section */
+#stats {
+    background-color: #fff;
+    color: #333;
 }
 
-@media (max-width: 768px) {
-    .team-row {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Reveal Section */
+#reveal {
+    background-color: #ececec;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    color: #333;
 }
