@@ -37,7 +37,6 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-/* General Section Styling */
 section {
     padding: 40px 20px;
     max-width: 900px;
@@ -48,77 +47,50 @@ section {
     margin-top: 20px;
 }
 
-/* Team Section Styling */
+img {
+    width: 80%;
+    max-width: 600px;
+}
+
 .team-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 20px;
 }
 
 .team-row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrao;
     justify-content: center;
     gap: 20px;
     width: 100%;
 }
 
-/* Fixing incorrect CSS selector (added ".") */
 .team-row:first-child {
-    max-width: 80%;
+    max-width: 80%; /* Adjusts the width of the first row */
 }
 
 .team-row:last-child {
-    max-width: 65%;
+    max-width: 65%; /* Makes the second row a bit narrower for even spacing */
 }
 
 .member {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex: 1;
     max-width: 150px;
-    min-width: 150px;
 }
 
-/* Member Images */
 .member img {
-    width: 120px; 
+    width: 120px; /* Adjust as needed */
     height: 170px;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular images */
     border: 3px solid #09090a;
-    display: block;
-    margin-bottom: 10px;
 }
 
-/* Member Names */
-.member p {
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-/* Sponsors Section */
-#sponsors {
-    background-color: black;
-    color: white; /* Fix: Changed from rgb(7,7,7) to white for visibility */
-    padding: 20px;
-    text-align: center;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .team-row {
         flex-direction: column;
         align-items: center;
-    }
-
-    .about-container {
-        max-width: 90%;
-        padding: 15px;
     }
 }
