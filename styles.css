@@ -52,33 +52,53 @@ img {
     max-width: 100px;
 }
 
+#sponsors {
+    background-color: rgb(12, 12, 12);
+    color: rgb(209, 163, 10);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Ensures nothing overflows */
+}
+
+#sponsors img {
+    max-width: 80%; /* Ensures the image resizes within the box */
+    height: auto; /* Keeps aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    object-fit: contain; /* Ensures the whole image fits without cropping */
+}
+
 .team-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 .team-row {
     display: flex;
-    flex-wrap: wrao;
     justify-content: center;
     gap: 20px;
     width: 100%;
 }
 
 .team-row:first-child {
-    max-width: 80%; /* Adjusts the width of the first row */
+    max-width: 90%; /* Adjusted to fit 5 members */
+    display: flex;
+    justify-content: center;
 }
 
 .team-row:last-child {
-    max-width: 65%; /* Makes the second row a bit narrower for even spacing */
+    max-width: 75%; /* Adjusted to fit 4 members */
+    display: flex;
+    justify-content: center;
 }
 
 .member {
     text-align: center;
-    flex: 1;
     max-width: 150px;
+    flex: 1;
 }
 
 .member img {
@@ -87,6 +107,7 @@ img {
     border-radius: 50%; /* Circular images */
     border: 3px solid #09090a;
 }
+
 
 @media (max-width: 768px) {
     .team-row {
