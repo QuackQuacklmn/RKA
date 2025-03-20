@@ -107,7 +107,7 @@ team-row:first-child {
 /* Sponsors Section */
 #sponsors {
     background-color: black;
-    color: white; /* Ensures text is visible on black background */
+    color: rgb(7, 7, 7); /* Ensures text is visible on black background */
     padding: 20px; /* Adds some spacing */
     text-align: center; /* Centers content */
 }
