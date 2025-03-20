@@ -68,7 +68,7 @@ img {
     width: 100%;
 }
 
-.team-row:first-child {
+team-row:first-child {
     max-width: 80%;
 }
 
@@ -102,6 +102,14 @@ img {
     font-size: 16px;
     font-weight: bold;
     margin-top: 5px;
+}
+
+/* Sponsors Section */
+#sponsors {
+    background-color: black;
+    color: white; /* Ensures text is visible on black background */
+    padding: 20px; /* Adds some spacing */
+    text-align: center; /* Centers content */
 }
 
 /* Responsive Design */
