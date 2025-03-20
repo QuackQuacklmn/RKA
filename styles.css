@@ -13,7 +13,11 @@ header {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav ul li {
@@ -23,11 +27,24 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
 section {
-    padding: 40px;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 img {
@@ -44,6 +61,7 @@ img {
 
 .team-row {
     display: flex;
+    flex-wrap: wrao;
     justify-content: center;
     gap: 20px;
     width: 100%;
@@ -59,10 +77,20 @@ img {
 
 .member {
     text-align: center;
+    flex: 1;
+    max-width: 150px;
 }
 
 .member img {
-    width: 100px; /* Adjust as needed */
-    height: 100px;
+    width: 120px; /* Adjust as needed */
+    height: 170px;
     border-radius: 50%; /* Circular images */
+    border: 3px solid #09090a;
+}
+
+@media (max-width: 768px) {
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+    }
 }
