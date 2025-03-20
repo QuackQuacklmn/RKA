@@ -52,6 +52,16 @@ img {
     max-width: 600px;
 }
 
+#about {
+    padding: 0; /* Remove extra spacing */
+}
+
+#about img {
+    width: 100%; /* Makes it take the full width of the section */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes unwanted spacing */
+}
+
 /* Team Section Styling */
 .team-container {
     display: flex;
