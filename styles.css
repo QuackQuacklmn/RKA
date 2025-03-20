@@ -52,6 +52,7 @@ img {
     max-width: 600px;
 }
 
+/* Team Section Styling */
 .team-container {
     display: flex;
     flex-direction: column;
@@ -61,33 +62,49 @@ img {
 
 .team-row {
     display: flex;
-    flex-wrap: wrao;
+    flex-wrap: wrap;  /* Fixed typo (was "wrao") */
     justify-content: center;
     gap: 20px;
     width: 100%;
 }
 
 .team-row:first-child {
-    max-width: 80%; /* Adjusts the width of the first row */
+    max-width: 80%;
 }
 
 .team-row:last-child {
-    max-width: 65%; /* Makes the second row a bit narrower for even spacing */
+    max-width: 65%;
 }
 
 .member {
     text-align: center;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 150px;
+    min-width: 150px;
 }
 
+/* Member Images */
 .member img {
     width: 120px; /* Adjust as needed */
     height: 170px;
-    border-radius: 50%; /* Circular images */
+    border-radius: 50%;
     border: 3px solid #09090a;
+    display: block;
+    margin-bottom: 10px; /* Ensures spacing between image and text */
 }
 
+/* Member Names */
+.member p {
+    color: black; /* Ensures text is visible */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .team-row {
         flex-direction: column;
