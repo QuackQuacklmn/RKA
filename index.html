@@ -6,18 +6,37 @@
     <title>Robokings Aurum #12993</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
 <body>
     <header>
         <h1>RoboKings Aurum #12993</h1>
     </header>
 
-    <section id="home">
-        <img src="images/team-photo.jpg" alt="Team Photo">
-    </section>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to RoboKings Aurum</h1>
+            <p>Innovating. Engineering. Winning.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </header>
+    
 
-    <nav>
+    <nav class="navbar">
+        <div class="logo">RoboKings Aurum</div>
         <ul>
-            <li><a href="#about">About Our Team</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#team">Meet the Team</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -27,9 +46,10 @@
             <li><a href="#meetings">Book a Meeting</a></li>
             <li><a href="#stats">Live Stats</a></li>
             <li><a href="#reveal">Robot Reveal</a></li>
-            <li><a href="#contact">Contact & Socials</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    
 
     <section id="about">
         <h2>About Our Team</h2>
@@ -44,50 +64,19 @@
 
     <section id="team">
         <h2>Meet the Team</h2>
-        <div class="team-container">
-            <div class="team-row">
-                <div class="member">
-                    <img src="images/Grace.jpg" alt="Grace">
-                    <p>Grace</p>
-                </div>
-                <div class="member">
-                    <img src="images/Sean.jpg" alt="Sean">
-                    <p>Sean
-                    </p>
-                </div>
-                <div class="member">
-                    <img src="images/Tinko.jpg" alt="Tinko">
-                    <p>Tinko</p>
-                </div>
-                <div class="member">
-                    <img src="images/Raf.jpg" alt="Raf">
-                    <p>Raf</p>
-                </div>
-                <div class="member">
-                    <img src="images/Jackson.jpg" alt="Jackson">
-                    <p>Jackson</p>
-                </div>
-            </div>
-            <div class="team-row">
-                <div class="member">
-                    <img src="images/Samiha.jpg" alt="Samiha">
-                    <p>Samiha</p>
-                </div>
-                <div class="member">
-                    <img src="images/Dean.jpg" alt="Dean">
-                    <p>Dean</p>
-                </div>
-                <div class="member">
-                    <img src="images/Shanti.jpg" alt="Shanti">
-                    <p>Shanti</p>
-                </div>
-                <div class="member">
-                    <img src="images/Zane.jpg" alt="Zane">
-                    <p>Zane</p>
-                </div>
-            </div>
+        <div class="team-grid">
+            <div class="member"><img src="images/Grace.jpg"><p>Grace</p></div>
+            <div class="member"><img src="images/Sean.jpg"><p>Sean</p></div>
+            <div class="member"><img src="images/Tinko.jpg"><p>Tinko</p></div>
+            <div class="member"><img src="images/Raf.jpg"><p>Raf</p></div>
+            <div class="member"><img src="images/Jackson.jpg"><p>Jackson</p></div>
+            <div class="member"><img src="images/Samiha.jpg"><p>Samiha</p></div>
+            <div class="member"><img src="images/Dean.jpg"><p>Dean</p></div>
+            <div class="member"><img src="images/Shanti.jpg"><p>Shanti</p></div>
+            <div class="member"><img src="images/Zane.jpg"><p>Zane</p></div>
         </div>
     </section>
+    
     
 
     <section id="gallery">
@@ -96,9 +85,15 @@
     </section>
 
     <section id="sponsors">
-        <h2>Thank You to Our Sponsors</h2>
-        <img src="images/sponsor-logos.png" alt="Our sponsors for ITD">
+        <h2>Our Sponsors</h2>
+        <div class="sponsor-logos">
+            <img src="images/sponsor1.png">
+            <img src="images/sponsor2.png">
+            <img src="images/sponsor3.png">
+            <img src="images/sponsor4.png">
+        </div>
     </section>
+    
     
     <style>
         #sponsors {
