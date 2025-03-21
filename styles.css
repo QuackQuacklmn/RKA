@@ -121,6 +121,70 @@ section img {
     background-color: #111;
     color: #ffd700;
 }
+/* About Section */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* About FTC Section (the new part below the original blurb) */
+.about-ftc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.about-text {
+    width: 50%; /* Takes up half of the space */
+    padding-right: 20px;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffd700; /* Or any color that fits your theme */
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.about-image {
+    width: 50%; /* Takes up the other half */
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Ensure responsive behavior */
+@media (max-width: 768px) {
+    .about-ftc {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+}
+
 
 /* Stats Section */
 #stats {
