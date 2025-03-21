@@ -22,15 +22,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Header */
 header {
     text-align: center;
-    padding: 20px 0;
+    margin-top: 50px;
     color: #ffd700;
-}
-
-header .logo {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
 }
 
 .hero {
