@@ -21,16 +21,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 header {
-    text-align: center;  /* Centers the logo horizontally */
-    padding: 20px 0;  /* Adds spacing above and below the logo */
+    text-align: center;
+    padding: 20px 0;
     color: #ffd700;
 }
 
 header .logo {
     display: block;
-    max-width: 100%;  /* Makes the logo responsive and scalable */
-    height: auto;  /* Ensures the aspect ratio is maintained */
-    margin: 0 auto;  /* Centers the image within the header */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .hero {
