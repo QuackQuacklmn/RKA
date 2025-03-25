@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robokings Aurum #12993</title>
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Smooth Scrolling -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -17,22 +25,8 @@
             });
         });
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>RoboKings Aurum</h1>
-                <h2>Αἰὲν ἀριστεύειν</h2>
-                <p>Always Striving for Excellence</p>
-                <a href="#about" class="btn">Learn More</a>
-            </div>
-        </div>
-    </header>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
@@ -52,6 +46,18 @@
         </ul>
     </nav>
 
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>RoboKings Aurum</h1>
+                <h2>Αἰὲν ἀριστεύειν</h2>
+                <p>Always Striving for Excellence</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </div>
+    </header>
+
     <!-- About Section -->
     <section id="about">
         <h2>About Our Team</h2>
@@ -60,7 +66,7 @@
         <div class="about-ftc">
             <div class="about-text">
                 <h3>About FTC</h3>
-                <p>FTC, or FIRST Tech Challenge, is a global robotics competition hosted by FIRST for students in grades 7-12. Teams design, build, and program robots to solve challenging, season-based problems. FTC sparks creativity, teamwork, and STEM skills, empowering students to innovate while preparing for careers in technology and engineering. It also fosters community impact, encouraging students to better themselves and their surroundings. FTC provides hands-on experience in STEM and engineering, helping students build meaningful, lifelong skills and connections.</p>
+                <p>FTC, or FIRST Tech Challenge, is a global robotics competition hosted by FIRST for students in grades 7-12. Teams design, build, and program robots to solve challenging, season-based problems.</p>
             </div>
             <div class="about-image">
                 <img src="images/About-Us.png" alt="About Us">
@@ -68,384 +74,47 @@
         </div>
     </section>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FTC Seasons</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                background-color: #070707;
-            }
-    
-            h1 {
-                margin-bottom: 20px;
-            }
-    
-            .season-container {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-    
-            .season-card {
-                width: 15%;
-                background-color: rgb(54, 52, 52);
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                padding: 10px;
-                cursor: pointer;
-                transition: transform 0.2s, box-shadow 0.2s;
-            }
-    
-            .season-card:hover {
-                transform: scale(1.05);
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            }
-    
-            .season-card img {
-                width: 100%;
-                border-radius: 10px;
-            }
-    
-            .season-card h2 {
-                font-size: 16px;
-                color: gold;
-                margin-top: 5px;
-            }
-    
-            .season-details {
-                display: none;
-                margin-top: 20px;
-                padding: 15px;
-                background-color: rgb(31, 30, 30);
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(207, 207, 7, 0.279);
-            }
-    
-            .gallery img {
-                width: 200px;
-                height: auto;
-                margin: 5px;
-            }
-            
-        </style>
-        <script>
-            function toggleSeason(seasonId) {
-                var season = document.getElementById(seasonId);
-                if (season.style.display === "none" || season.style.display === "") {
-                    season.style.display = "block";
-                } else {
-                    season.style.display = "none";
-                }
-            }
-        </script>
-    </head>
-    <body>
-    
-        <h1>FTC Seasons Overview</h1>
-    
-        <div class="season-container">
-            <div class="season-card" onclick="toggleSeason('Relic Recovery')">
-                <img src="images/Skystone-team.webp" alt="Relic Recovery">
-                <h2>Relic Recovery (2017-2018)</h2>
-            </div>
-            <div class="season-card" onclick="toggleSeason('Rover Ruckus')">
-                <img src="images/Skystone-team.webp" alt="Rover Ruckus">
-                <h2>Rover Ruckus (2018-2019)</h2>
-            </div>
-            <div class="season-card" onclick="toggleSeason('skystone')">
-                <img src="images/Skystone-team.webp" alt="Skystone">
-                <h2>Skystone (2019-2020)</h2>
-            </div>
-            <div class="season-card" onclick="toggleSeason('ultimate_goal')">
-                <img src="ultimate_goal1.jpg" alt="Ultimate Goal">
-                <h2>Ultimate Goal (2020-2021)</h2>
-            </div>
-            <div class="season-card" onclick="toggleSeason('freight_frenzy')">
-                <img src="freight_frenzy1.jpg" alt="Freight Frenzy">
-                <h2>Freight Frenzy (2021-2022)</h2>
-            </div>
-            <div class="season-card" onclick="toggleSeason('powerplay')">
-                <img src="powerplay1.jpg" alt="PowerPlay">
-                <h2>PowerPlay (2022-2023)</h2>
-            </div>
-            <div class="season-card" onclick="toggleSeason('centerstage')">
-                <img src="centerstage1.jpg" alt="CenterStage">
-                <h2>CenterStage (2023-2024)</h2>
-            </div>
-            <div class="season-card" onclick="toggleSeason('into_the_deep')">
-                <img src="into_the_deep1.jpg" alt="Into The Deep">
-                <h2>Into The Deep (2024-2025)</h2>
-            </div>
-        </div>
-
-    
-        <div id="Relic Recovery" class="season-details">
-            <h2>Relic Recovery (2017-2018)</h2>
-            <div class="gallery">
-                <img src="ultimate_goal1.jpg" alt="Relic Recovery Image 1">
-                <img src="ultimate_goal2.jpg" alt="Relic Recovery Image 2">
-            </div>
-            <h3>Regionals & Awards</h3>
-            <p>Details about regionals and awards.</p>
-            <h3>Nationals & Awards</h3>
-            <p>Australia WAC - 2nd Inspire</p>
-            <h3>Worlds & Awards</h3>
-            <p>31st Houston World Championships</p>
-        </div>
-
-        <div id="Rover Ruckus" class="season-details">
-            <h2>Rover Ruckus (2018-2019)</h2>
-            <div class="gallery">
-                <img src="ultimate_goal1.jpg" alt="Ultimate Goal Image 1">
-                <img src="ultimate_goal2.jpg" alt="Ultimate Goal Image 2">
-            </div>
-            <h3>Regionals & Awards</h3>
-            <p>Details about regionals and awards.</p>
-            <h3>Nationals & Awards</h3>
-            <p>Australia WA1 - Second inspire</p>
-            <h3>Worlds & Awards</h3>
-            <p>...</p>
-        </div>
-
-         <div id="skystone" class="season-details">
-            <h2>Skystone (2019-2020)</h2>
-            <div class="gallery">
-                <img src="images/2019-pic1.png" alt="2019-pic1">
-                <img src="images/skystone-nats.png" alt="skystone-nats">
-            </div>
-            <h3>Regionals & Awards</h3>
-            <p>1st Place Inspire - 10th in Robot Game</p>
-            <h3>Nationals & Awards</h3>
-            <p>1st Place Inspire  -  Winning Alliance Captain.</p>
-            <h3>Worlds & Awards</h3>
-            <p>Worlds Cancelled</p>
-        </div>
-    
-        <div id="ultimate_goal" class="season-details">
-            <h2>Ultimate Goal (2020-2021)</h2>
-            <div class="gallery">
-                <img src="ultimate_goal1.jpg" alt="Ultimate Goal Image 1">
-                <img src="ultimate_goal2.jpg" alt="Ultimate Goal Image 2">
-            </div>
-            <h3>Regionals & Awards</h3>
-            <p>Details about regionals and awards.</p>
-            <h3>Nationals & Awards</h3>
-            <p>1st Control Award - 2nd Think Award - 3rd Innovate Award - 3rd Robot Game - 3rd Inspire.</p>
-            <h3>Worlds & Awards</h3>
-            <p>Details about worlds and awards.</p>
-        </div>
-    
-        <div id="freight_frenzy" class="season-details">
-            <h2>Freight Frenzy (2021-2022)</h2>
-            <div class="gallery">
-                <img src="freight_frenzy1.jpg" alt="Freight Frenzy Image 1">
-                <img src="freight_frenzy2.jpg" alt="Freight Frenzy Image 2">
-            </div>
-            <h3>Regionals & Awards</h3>
-            <p>Details about regionals and awards.</p>
-            <h3>Nationals & Awards</h3>
-            <p>1st Ranked Robot - 3rd Inspire</p>
-            <h3>MTI & Awards</h3>
-            <p>31st Ranked</p>
-        </div>
-    
-        <div id="powerplay" class="season-details">
-            <h2>PowerPlay (2022-2023)</h2>
-            <div class="gallery">
-                <img src="powerplay1.jpg" alt="PowerPlay Image 1">
-                <img src="powerplay2.jpg" alt="PowerPlay Image 2">
-            </div>
-            <h3>Regionals & Awards</h3>
-            <p>FAC</p>
-            <h3>Nationals & Awards</h3>
-            <p>Australia WAC - 1st Inspire</p>
-            <h3>Worlds & Awards</h3>
-            <p>1st seed - 1 of 2 teams undefeated - top 5 high score -top 3 OPR - First Australian team to make Elims - 2x FTC top 25.</p>
-            <h3>APOC (off season)</h3>
-            <p>WAC - 3rd Inspire - 1st Innovate</p>
-        </div>
-    
-        <div id="centerstage" class="season-details">
-            <h2>CenterStage (2023-2024)</h2>
-            <div class="gallery">
-                <img src="centerstage1.jpg" alt="CenterStage Image 1">
-                <img src="centerstage2.jpg" alt="CenterStage Image 2">
-            </div>
-            <h3>Regionals & Awards</h3>
-            <p>..</p>
-            <h3>Nationals & Awards</h3>
-            <p>Australian National Winning Alliance - 1st Inspire.</p>
-            <h3>Worlds & Awards</h3>
-            <p>Ochoa Division winner - Finalist Alliance First Pick - Innovate Award</p>
-        </div>
-    
-        <div id="into_the_deep" class="season-details">
-            <h2>Into The Deep (2024-2025)</h2>
-            <div class="gallery">
-                <img src="into_the_deep1.jpg" alt="Into The Deep Image 1">
-                <img src="into_the_deep2.jpg" alt="Into The Deep Image 2">
-            </div>
-            <h3>Regionals & Awards</h3>
-            <p>Winning Alaince - 2nd Inspire</p>
-            <h3>Nationals & Awards</h3>
-            <p>2nd Alliance Captains - 2nd</p>
-            <h3>Worlds & Awards</h3>
-            <p>Details about worlds and awards.</p>
-        </div>
-    
-    </body>
-    </html>
-    
-
-    <!-- Meet The Team Section -->
+    <!-- Meet the Team Section -->
     <section id="team">
         <h2>Meet the Team</h2>
-        <div class="team-container">
+        <div class="team-grid">
             <div class="team-card">
-                <img src="images/Grace.jpg" alt="Grace">
-                <h3>Grace</h3>
+                <img src="images/member1.jpg" alt="Team Member 1">
+                <h3>Member Name</h3>
+                <p>Role in Team</p>
             </div>
             <div class="team-card">
-                <img src="images/Sean.jpg" alt="Sean">
-                <h3>Sean</h3>
+                <img src="images/member2.jpg" alt="Team Member 2">
+                <h3>Member Name</h3>
+                <p>Role in Team</p>
             </div>
-            <div class="team-card">
-                <img src="images/Tinko.jpg" alt="Sean">
-                <h3>Tinko</h3>
+            <!-- Add more team members as needed -->
+        </div>
+    </section>
+
+    <!-- FTC Seasons Overview -->
+    <section id="timeline">
+        <h2>FTC Seasons Overview</h2>
+        <div class="season-container">
+            <div class="season-card" onclick="toggleSeason('Relic Recovery')">
+                <img src="images/Relic-Recovery.jpg" alt="Relic Recovery">
+                <h3>Relic Recovery (2017-2018)</h3>
             </div>
-            <div class="team-card">
-                <img src="images/Raf.jpg" alt="Sean">
-                <h3>Raf
-                </h3>
+            <div class="season-card" onclick="toggleSeason('Rover Ruckus')">
+                <img src="images/Rover-Ruckus.jpg" alt="Rover Ruckus">
+                <h3>Rover Ruckus (2018-2019)</h3>
             </div>
-            <div class="team-card">
-                <img src="images/Jackson.jpg" alt="Sean">
-                <h3>Jackson</h3>
-            </div>
-            <div class="team-card">
-                <img src="images/Samiha.jpg" alt="Sean">
-                <h3>Samiha</h3>
-            </div>
-            <div class="team-card">
-                <img src="images/Dean.jpg" alt="Sean">
-                <h3>Dean</h3>
-            </div>
-            <div class="team-card">
-                <img src="images/Shanti.jpg" alt="Sean">
-                <h3>Shanti</h3>
-            </div>
-            <div class="team-card">
-                <img src="images/Zane.jpg" alt="Sean">
-                <h3>Zane</h3>
+            <div class="season-card" onclick="toggleSeason('Skystone')">
+                <img src="images/Skystone.jpg" alt="Skystone">
+                <h3>Skystone (2019-2020)</h3>
             </div>
         </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="photogallery">
-        <h2>Gallery</h2>
-        <img src="images/RKA digicam photos/IMG_1276.JPG">
-        <img src="images/RKA digicam photos/IMG_1531JPG">
-
-    </section>
-
-    <!-- Sponsors -->
-    <section id="sponsors">
-        <h2>Our Sponsors</h2>
-        <p>Coming soon...</p>
-    </section>
-
-    <section id="videos">
-        <h2>Into The Deep 2024 - 2025</h2>
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-               <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/" style="background: #ddd;"></iframe>
-                <p style="text-align: center;">ITD Robot Reveal</p>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/" style="background: #ddd;"></iframe>
-                <p style="text-align: center;">ITD Season Recap</p>
-            </div>
-        </div>
-    
-        <h3 style="text-align: center; margin-top: 40px;">Past Seasons</h3>
-    
-        <h4 style="text-align: center;">Centerstage</h4>
-        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 900px; margin: auto;">
-            <div>
-                <iframe width="200" height="112" src="https://www.youtube.com/embed/T2By8JdrbEs"></iframe>
-                <p style="text-align: center;">Centerstage Season Recap</p>
-            </div>
-            <div>
-                <iframe width="200" height="112" src="https://www.youtube.com/embed/lB_qQFsnSpo"></iframe>
-                <p style="text-align: center;">Centerstage Worlds Teaser</p>
-            </div>
-            <div>
-                <iframe width="200" height="112" src="https://www.youtube.com/embed/DoAaqSVYxwU"></iframe>
-                <p style="text-align: center;">Centerstage Solo Run</p>
-            </div>
-            <div>
-                <iframe width="200" height="112" src="https://www.youtube.com/embed/yMmlXRx4sTE"></iframe>
-                <p style="text-align: center;">Centerstage Behind The Bot</p>
-            </div>
-        </div>
-    
-        <h4 style="text-align: center; margin-top: 30px;">Powerplay</h4>
-        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 900px; margin: auto;">
-            <div>
-                <iframe width="200" height="112" src="https://www.youtube.com/embed/PfUI9X_DEB0"></iframe>
-                <p style="text-align: center;">Powerplay Robot Reveal</p>
-            </div>
-            <div>
-                <iframe width="200" height="112" src="https://www.youtube.com/embed/kYN2lh6MZY8"></iframe>
-                <p style="text-align: center;">Powerplay Season Recap</p>
-            </div>
-            <div>
-                <iframe width="200" height="112" src="https://www.youtube.com/embed/8st1sbF4QRU"></iframe>
-                <p style="text-align: center;">Powerplay Autonomous Compilation</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="outreach">
-        <h2>Outreach</h2>
-        <p>Our outreach projects this season.</p>
-    </section>
-    
-    <section id="meetings">
-        <h2>Book a Meeting</h2>
-        <a href="https://calendly.com/YOUR_MEETING_LINK" target="_blank">Book a Meeting</a>
-    </section>
-    
-    <section id="stats">
-        <h2>Live Stats</h2>
-        <p>Follow our live stats during competitions and events.</p>
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vStrsLfjDE7J-OOoyLiAA3oPhjvKh082uRkWVP4dO45vYVxzcoFipJ94xel7rjQbquhPEjS7Z2ZGgRj/pubhtml?gid=0&single=true"
-            width="100%" height="600" frameborder="0" style="border: none;"></iframe>
-    </section>
-    
-    <section id="reveal">
-        <h2>Robot Reveal</h2>
-        <p>Worlds robot: Meet Sentinel.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to get in touch with us for more information.</p>
-        <!-- Add contact form or details here -->
-    </section>
-    
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 RoboKings Aurum #12993. All Rights Reserved.</p>
+        <p>© 2024 RoboKings Aurum #12993. All rights reserved.</p>
     </footer>
 
 </body>
 </html>
-
