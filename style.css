@@ -120,48 +120,53 @@ section img {
 #about {
     background-color: #111;
     color: #ffd700;
-}
-/* About Section */
-#about {
-    padding: 50px 0;
+    padding: 50px 10%; /* Added left & right padding for better spacing */
     text-align: center;
 }
 
-/* About FTC Section (the new part below the original blurb) */
+/* About FTC Section */
 .about-ftc {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between; /* Creates balanced spacing */
     align-items: center;
     margin-top: 40px;
     text-align: left;
+    gap: 40px; /* Adds spacing between text and image */
 }
 
+/* Adjusted text width and padding */
 .about-text {
-    width: 50%; /* Takes up half of the space */
+    width: 55%; /* Gives more space to text */
+    padding-left: 5%; /* Moves text further from left border */
     padding-right: 20px;
 }
 
+/* Title & Paragraph Adjustments */
 .about-text h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ffd700; /* Or any color that fits your theme */
+    color: #ffd700;
 }
 
 .about-text p {
     font-size: 1.2rem;
     color: #fff;
+    line-height: 1.6;
 }
 
+/* Adjusted Image Position */
 .about-image {
-    width: 50%; /* Takes up the other half */
-    text-align: center;
+    width: 45%; /* Slightly larger to fill empty space */
+    display: flex;
+    justify-content: center; /* Centers the image */
 }
 
 .about-image img {
-    max-width: 100%;
+    max-width: 90%; /* Keeps the image size but prevents overflow */
     height: auto;
-    border-radius: 10px;
+    border-radius: 25%;
 }
+
 
 /* Ensure responsive behavior */
 @media (max-width: 768px) {
