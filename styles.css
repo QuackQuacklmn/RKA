@@ -323,9 +323,9 @@ footer {
 
 /* Gallery Section */
 .photogallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flow-root;
+    justify-content: space-evenly;
+    justify-content: space-evenly;
     gap: 10px;
     padding: 20px;
 }
@@ -333,5 +333,4 @@ footer {
 .photogallery img {
     width: auto;  /* Adjust based on your needs */
     height: auto;
-    border-radius: 8px;
 }
