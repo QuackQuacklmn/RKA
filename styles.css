@@ -332,7 +332,7 @@ footer {
     width: 100%;
     display: block;
     margin-bottom: 3px; /* Keeps small gaps between images */
-    transform: scale(0.4); /* Shrinks images to 60% of original size */
+    transform: scale(0.8); /* Shrinks images to 60% of original size */
     transform-origin: center;
   }
   
