@@ -321,13 +321,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Full control container for the gallery */
-.photogallery-container {
-    width: 100vw; /* Full viewport width */
-    max-width: 100%; /* Prevents overflow issues */
-    padding: 0 2vw; /* Adjust side spacing as needed */
-    margin: 0 auto; /* Centers if needed */
-}
 
 /* The photogallery itself */
 .photogallery {
@@ -340,7 +333,7 @@ footer {
 .photogallery img,
 .photogallery video { /* Apply same styling to both */
     display: block;
-    width: 100%; /* Ensures they fully fit within column */
+    width: 40%; /* Ensures they fully fit within column */
     margin-bottom: 5px; /* Keeps spacing uniform */
     break-inside: avoid; /* Prevents breaking between columns */
 }
