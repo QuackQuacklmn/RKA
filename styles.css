@@ -320,17 +320,3 @@ footer {
 #meetings a:hover {
     text-decoration: underline;
 }
-
-/* Gallery Section */
-.photogallery {
-    display: flow-root;
-    justify-content: space-evenly;
-    justify-content: space-evenly;
-    gap: 10px;
-    padding: 20px;
-}
-
-.photogallery img {
-    width: auto;  /* Adjust based on your needs */
-    height: auto;
-}
