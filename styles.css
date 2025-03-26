@@ -321,6 +321,7 @@ footer {
     text-decoration: underline;
 }
 
+/* Gallery Container */
 .photogallery-container {
     width: 100vw; /* Full viewport width */
     max-width: 100%; /* Prevents overflow issues */
@@ -338,15 +339,22 @@ footer {
 
 /* Ensure images and videos fit */
 .photogallery img,
-.photogallery-videos video {
+.photogallery video { /* Combine images and videos for cleaner code */
     width: 100%;
     display: block;
     margin-bottom: 5px;
 }
 
+/* Fix for videos not appearing */
+.photogallery-videos {
+    break-inside: avoid; /* Prevents videos from getting hidden */
+}
+
+/* Sponsors Section: Corrected Grid Layout */
 .sponsors {
     display: grid;
-    column-count: 8;
+    grid-template-columns: repeat(8, 1fr); /* Creates 8 equal columns */
+    gap: 10px; /* Space between items */
     width: 100%;
     margin-bottom: 20px;
 }
