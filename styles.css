@@ -324,6 +324,7 @@ footer {
 .photogallery {
     column-count: 8; /* Adjust for more/less columns */
     column-gap: 5px;
+    padding: 1%;
   }
   
 .photogallery img {
