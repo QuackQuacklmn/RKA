@@ -337,10 +337,9 @@ footer {
     padding: 0; /* No extra padding inside */
 }
 
-/* Ensure images and videos fit */
 .photogallery img,
 .photogallery-videos video {
-    width: 100%;
+    width: 100%; /* Makes video fit like an image */
     display: block;
     margin-bottom: 5px;
 }
