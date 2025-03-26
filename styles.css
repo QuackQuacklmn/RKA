@@ -338,8 +338,8 @@ footer {
 }
 
 /* Ensure images and videos fit */
-.photogallery img,
-.photogallery video { /* Combine images and videos for cleaner code */
+.photogallery-img,
+.photogallery-videos { /* Combine images and videos for cleaner code */
     width: 100%;
     display: block;
     margin-bottom: 5px;
