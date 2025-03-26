@@ -324,11 +324,13 @@ footer {
 .photogallery {
     column-count: 10; /* Adjust for more/less columns */
     column-gap: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
 .photogallery img {
     width: 100%;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
   
