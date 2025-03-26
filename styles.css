@@ -346,6 +346,7 @@ footer {
 
 .sponsors {
     display: grid;
+    column-count: 8;
     width: 100%;
     margin-bottom: 20px;
 }
