@@ -322,17 +322,13 @@ footer {
 }
 
 .photogallery {
-    column-count: 20; /* Increase column count for more compact arrangement */
-    column-gap: 3px; /* Reduce gap to keep images close together */
-    margin-left: 5px;
-    margin-right: 5px;
+    column-count: 10; /* Adjust for more/less columns */
+    column-gap: 3px;
   }
   
   .photogallery img {
     width: 100%;
     display: block;
-    margin-bottom: 3px; /* Keeps small gaps between images */
-    transform: scale(0.8); /* Shrinks images to 60% of original size */
-    transform-origin: center;
+    margin-bottom: 5px;
   }
   
