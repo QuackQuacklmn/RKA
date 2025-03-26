@@ -321,3 +321,14 @@ footer {
     text-decoration: underline;
 }
 
+.photogallery {
+    column-count: 15; /* Adjust for more/less columns */
+    column-gap: 5px;
+  }
+  
+.photogallery img {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
