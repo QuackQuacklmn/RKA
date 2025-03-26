@@ -1,29 +1,113 @@
 body {
     font-family: 'Orbitron', sans-serif;
-    background-color: black;
-    color: gold;
+    background-color: #000; /* Black background */
+    color: gold; /* Gold text */
     text-align: center;
 }
 
+a {
+    color: gold;
+}
+
+a:hover {
+    color: #ffd700; /* Lighter gold for hover effect */
+}
+
+
 h2 {
     font-size: 2rem;
+}
+
+/* General Section Styles */
+section {
+    padding: 80px 20px; /* Increased padding for better separation */
+    margin-top: 60px; /* Adjusted margin to account for fixed navigation bar */
+    border-bottom: 2px solid gold; /* Gold underline for section separation */
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Specific Section Styles */
+#home {
+    background: url('team_photo.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#home .home-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home img {
+    max-width: 300px;
+    height: auto;
 }
 
 img {
     max-width: 100%;
 }
 
-.team-grid, .gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team-member {
-    margin: 10px;
-}
 
 .sponsor-logos img {
     width: 150px;
     margin: 10px;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #000; /* Black background */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Team Section Styles */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid gold;
 }
