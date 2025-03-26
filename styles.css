@@ -233,12 +233,6 @@ p {
     }
 }
 
-.gallery img {
-    max-width: 25%px;
-    border-radius: 30%px;
-   
-}
-
 
 /* Meet the Team */
 .team-container {
@@ -327,18 +321,9 @@ footer {
     text-decoration: underline;
 }
 
-.photogallery {
-    display:flow-root;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width:100%;
-}
-
 .photogallery img {
-    display: flow-root;
-    max-width: 80px;
+    max-width: 25%px;
+    border-radius: 30%px;
+   
 }
-
 
