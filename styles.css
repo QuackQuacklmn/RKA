@@ -333,10 +333,9 @@ footer {
     margin-bottom: 5px;
   }
 
-.photogallery-videos {
-    position: bottom row;
-    width: 100%;
-    display: block;
-    margin-bottom: 5px;
-    transform: scale(0.6);
-}
+  .photogallery img,
+  .photogallery-videos video {
+      width: 100%; /* Makes video fit like an image */
+      display: block;
+      margin-bottom: 5px;
+  }
