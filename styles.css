@@ -321,7 +321,7 @@ footer {
     text-decoration: underline;
 }
 
-.gallery-container {
+.photogallery-container {
     width: 100vw; /* Full viewport width */
     max-width: 100%; /* Prevents overflow issues */
     padding: 0 2vw; /* Adjust side spacing as needed */
@@ -345,7 +345,7 @@ footer {
 }
 
 .sponsors {
-    display: block;
+    display: grid;
     width: 100%;
     margin-bottom: 20px;
 }
