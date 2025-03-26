@@ -333,6 +333,6 @@ footer {
   }
   
   .photogallery video {
-    width: 100%; /* Makes video fit the column width */
+    width: 40%; /* Makes video fit the column width */
     display: block; /* Prevents spacing issues */
 }
