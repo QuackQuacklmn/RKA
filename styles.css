@@ -339,8 +339,8 @@ footer {
 
 .photogallery img,
 .photogallery-videos video {
-    width: 100%; /* Makes video fit like an image */
     display: block;
+    width: 100%; /* Makes video fit like an image */
     margin-bottom: 5px;
 }
 
