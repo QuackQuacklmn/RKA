@@ -321,8 +321,8 @@ footer {
     text-decoration: underline;
 }
 
-/* Gallery Container */
-.photogallery-container {
+/* Full control container for the gallery */
+.gallery-container {
     width: 100vw; /* Full viewport width */
     max-width: 100%; /* Prevents overflow issues */
     padding: 0 2vw; /* Adjust side spacing as needed */
@@ -338,17 +338,13 @@ footer {
 }
 
 /* Ensure images and videos fit */
-.photogallery-img,
-.photogallery-videos { /* Combine images and videos for cleaner code */
+.photogallery img,
+.photogallery-videos video {
     width: 100%;
     display: block;
     margin-bottom: 5px;
 }
 
-/* Fix for videos not appearing */
-.photogallery-videos {
-    break-inside: avoid; /* Prevents videos from getting hidden */
-}
 
 .sponsors-container {
     display: flex;
