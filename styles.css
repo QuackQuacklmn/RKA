@@ -322,10 +322,14 @@ footer {
 }
 
 .photogallery {
+    width: 100vw; /* Makes the gallery span the full viewport width */
+    margin-left: -10%; /* Cancels out the section's 10% padding */
+    margin-right: -10%; /* Cancels out the section's 10% padding */
+}
+
+.photogallery {
     column-count: 10; /* Adjust for more/less columns */
     column-gap: 3px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
   
 .photogallery img {
