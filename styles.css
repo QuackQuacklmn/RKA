@@ -321,9 +321,8 @@ footer {
     text-decoration: underline;
 }
 
-.photogallery img {
-    max-width: 25%px;
-    border-radius: 30%px;
-   
+#photogallery img {
+    max-width: 25%;
+    border-radius: 20px; /* Adjust this value as needed */
 }
 
