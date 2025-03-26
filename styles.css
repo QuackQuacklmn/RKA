@@ -337,17 +337,14 @@ footer {
     padding: 0; /* No extra padding inside */
 }
 
-.photogallery img {
+.photogallery img,
+.photogallery video { /* Apply same styling to both */
     display: block;
-    width: 100%; /* Makes video fit like an image */
-    margin-bottom: 5px;
+    width: 100%; /* Ensures they fully fit within column */
+    margin-bottom: 5px; /* Keeps spacing uniform */
+    break-inside: avoid; /* Prevents breaking between columns */
 }
 
-.photogallery-videos video {
-    display: block;
-    width: fit-content;
-    margin: 5px;
-}
 
 
 
