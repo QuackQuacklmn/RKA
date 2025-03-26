@@ -326,7 +326,7 @@ footer {
     column-gap: 3px;
   }
   
-  .photogallery img {
+.photogallery img {
     width: 100%;
     display: block;
     margin-bottom: 5px;
