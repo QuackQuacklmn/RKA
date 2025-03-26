@@ -333,8 +333,10 @@ footer {
     margin-bottom: 5px;
   }
 
-.photogallery video {
+.photogallery-videos {
+    position: bottom row;
     width: 100%;
     display: block;
     margin-bottom: 5px;
+    transform: scale(0.6);
 }
