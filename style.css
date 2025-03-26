@@ -62,35 +62,37 @@ img {
 
 /* Navigation Bar Styles */
 nav {
-    background-color: #000; /* Black background */
+    background-color: black; /* Black background */
     padding: 10px 0;
-    position: fixed;
+    position: fixed; /* Keeps navbar at the top */
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+}
+
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block; /* Makes items appear side-by-side */
+    margin: 0 15px; /* Spacing between items */
 }
 
 nav ul li a {
-    color: gold;
+    color: gold; /* Gold text */
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'Orbitron', sans-serif;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: white; /* Changes color when hovered */
 }
 
 /* Team Section Styles */
