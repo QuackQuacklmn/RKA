@@ -322,7 +322,7 @@ footer {
 }
 
 .photogallery {
-    column-count: 4; /* Adjust for more/less columns */
+    column-count: 7; /* Adjust for more/less columns */
     column-gap: 5px;
   }
   
