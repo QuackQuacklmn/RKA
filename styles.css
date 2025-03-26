@@ -331,9 +331,7 @@ footer {
 }
 
 .photogallery img {
-    width: 200px;  /* Adjust based on your needs */
+    width: auto;  /* Adjust based on your needs */
     height: auto;
     border-radius: 8px;
-    border: 2px solid #FFD700;
-    box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.5);
 }
