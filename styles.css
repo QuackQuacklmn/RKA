@@ -321,8 +321,14 @@ footer {
     text-decoration: underline;
 }
 
-#photogallery img {
-    max-width: 25%;
-    border-radius: 20px; /* Adjust this value as needed */
+#photogallery {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photogallery img {
+    width: 25%;
+    height: auto;
 }
 
