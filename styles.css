@@ -321,14 +321,17 @@ footer {
     text-decoration: underline;
 }
 
-.photogallery {
-    column-count: 7; /* Adjust for more/less columns */
-    column-gap: 5px;
+.gallery {
+    column-count: 8; /* Increase column count for more compact arrangement */
+    column-gap: 3px; /* Reduce gap to keep images close together */
+    margin: 0 25%; /* Shrinks side margins by 50% */
   }
   
-  .photogallery img {
+  .gallery img {
     width: 100%;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3px; /* Keeps small gaps between images */
+    transform: scale(0.6); /* Shrinks images to 60% of original size */
+    transform-origin: center;
   }
   
