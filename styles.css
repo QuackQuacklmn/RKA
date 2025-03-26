@@ -321,21 +321,25 @@ footer {
     text-decoration: underline;
 }
 
+.gallery-container {
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Prevents overflow issues */
+    padding: 0 2vw; /* Adjust side spacing as needed */
+    margin: 0 auto; /* Centers if needed */
+}
+
+/* The photogallery itself */
 .photogallery {
-    column-count: 8; /* Adjust for more/less columns */
+    column-count: 8; /* Adjust as needed */
     column-gap: 5px;
-    padding: 1%;
-  }
-  
-.photogallery img {
+    width: 100%; /* Ensures it fills the container */
+    padding: 0; /* No extra padding inside */
+}
+
+/* Ensure images and videos fit */
+.photogallery img,
+.photogallery-videos video {
     width: 100%;
     display: block;
     margin-bottom: 5px;
-  }
-
-  .photogallery img,
-  .photogallery-videos video {
-      width: 100%; /* Makes video fit like an image */
-      display: block;
-      margin-bottom: 5px;
-  }
+}
