@@ -331,4 +331,9 @@ footer {
     display: block;
     margin-bottom: 5px;
   }
-  
+
+.photogallery video {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+}
