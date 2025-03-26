@@ -321,13 +321,13 @@ footer {
     text-decoration: underline;
 }
 
-.gallery {
+.photogallery {
     column-count: 8; /* Increase column count for more compact arrangement */
     column-gap: 3px; /* Reduce gap to keep images close together */
     margin: 0 25%; /* Shrinks side margins by 50% */
   }
   
-  .gallery img {
+  .photogallery img {
     width: 100%;
     display: block;
     margin-bottom: 3px; /* Keeps small gaps between images */
