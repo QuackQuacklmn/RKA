@@ -454,3 +454,18 @@ footer {
     height: auto; /* Keeps aspect ratio */
     object-fit: contain; /* Ensures logos scale properly */
 }
+
+.video-container, .photogallery-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.video-container video, .photogallery-videos video {
+    width: 45%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
