@@ -333,7 +333,7 @@ footer {
 .photogallery img,
 .photogallery video { /* Apply same styling to both */
     display: block;
-    width: 40%; /* Ensures they fully fit within column */
+    width: 100%; /* Ensures they fully fit within column */
     margin-bottom: 5px; /* Keeps spacing uniform */
     break-inside: avoid; /* Prevents breaking between columns */
 }
