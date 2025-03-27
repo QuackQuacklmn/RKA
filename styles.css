@@ -339,7 +339,7 @@ footer {
 }
 
 .photogallery img,
-.photogallery video { /* Apply same styling to both */
+.photogallery-videos video { /* Apply same styling to both */
     display: block;
     width: 100%; /* Ensures they fully fit within column */
     margin-bottom: 5px; /* Keeps spacing uniform */
