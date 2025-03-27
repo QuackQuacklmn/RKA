@@ -12,23 +12,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    let dropdown = document.querySelector(".dropbtn");
-    let dropdownMenu = document.querySelector(".dropdown-content");
+// Select all images in the gallery
+const images = document.querySelectorAll(".photogallery img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
 
-    dropdown.addEventListener("click", function(event) {
-        event.preventDefault();
-        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener("click", function(event) {
-        if (!dropdown.contains(event.target) && !dropdownMenu.contains(event.target)) {
-            dropdownMenu.style.display = "none";
-        }
+// Open Lightbox when an image is clicked
+images.forEach(image => {
+    image.addEventListener("click", () => {
+        lightbox.classList.add("active");
+        lightboxImage.src = image.src; // Set lightbox image source
     });
 });
-</script>
+
+// Close Lightbox when clicking anywhere outside the image
+lightbox.addEventListener("click", (event) => {
+    if (event.target !== lightboxImage) { // Only close if clicking outside image
+        lightbox.classList.remove("active");
+    }
+});
 
 
