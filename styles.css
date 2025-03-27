@@ -321,6 +321,13 @@ footer {
     text-decoration: underline;
 }
 
+/* Full control container for the gallery */
+.photogallery-container {
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Prevents overflow issues */
+    padding: 0 2vw; /* Adjust side spacing as needed */
+    margin: 0 auto; /* Centers if needed */
+}
 
 /* The photogallery itself */
 .photogallery {
@@ -337,6 +344,8 @@ footer {
     margin-bottom: 5px; /* Keeps spacing uniform */
     break-inside: avoid; /* Prevents breaking between columns */
 }
+
+
 
 
 .sponsors-container {
