@@ -330,23 +330,32 @@ footer {
 }
 
 /* The photogallery itself */
-.photogallery,
-.photogallery-videos {
+.photogallery {
     column-count: 8; /* Adjust as needed */
     column-gap: 5px;
     width: 100%; /* Ensures it fills the container */
     padding: 0; /* No extra padding inside */
 }
 
-.photogallery img,
-.photogallery-videos video { /* Apply same styling to both */
+.photogallery img {
     display: block;
     width: 100%; /* Ensures they fully fit within column */
     margin-bottom: 5px; /* Keeps spacing uniform */
     break-inside: avoid; /* Prevents breaking between columns */
 }
 
+.photogallery-videos {
+    column-count: 8;
+    max-width: max-content;
+    padding: 0 2w;
+    margin: 0 auto;
+}
 
+.photogallery-videos video {
+    display: grid;
+    width: 100%;
+    margin-bottom: 5px;
+}
 
 
 .sponsors-container {
