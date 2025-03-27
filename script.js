@@ -12,24 +12,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Select all images in the gallery
-const images = document.querySelectorAll(".photogallery img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightbox-image");
-
-// Open Lightbox when an image is clicked
-images.forEach(image => {
-    image.addEventListener("click", () => {
-        lightbox.classList.add("active");
-        lightboxImage.src = image.src; // Set lightbox image source
-    });
-});
-
-// Close Lightbox when clicking anywhere outside the image
-lightbox.addEventListener("click", (event) => {
-    if (event.target !== lightboxImage) { // Only close if clicking outside image
-        lightbox.classList.remove("active");
-    }
-});
 
 
