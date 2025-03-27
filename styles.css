@@ -345,7 +345,7 @@ footer {
 }
 
 .photogallery-videos {
-    column-count: 8;
+    column-count: 5;
     max-width: max-content;
     padding: 0 2w;
     margin: 0 auto;
