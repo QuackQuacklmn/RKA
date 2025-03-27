@@ -34,14 +34,23 @@
         </div>
     </header>
 
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#team">Meet the Team</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+    
+            <!-- Dropdown for Gallery -->
+            <li class="dropdown">
+                <a href="#photogallery" class="dropbtn">Gallery ▾</a>
+                <div class="dropdown-content">
+                    <a href="#photogallery">Photo Gallery</a> <!-- Scrolls to existing gallery -->
+                    <a href="match-videos">Match Videos</a> <!-- Opens Match Videos page -->
+                    <a href="memories">Memories</a> <!-- Opens Memories page -->
+                </div>
+            </li>
+    
             <li><a href="#sponsors">Sponsors</a></li>
             <li><a href="#videos">Videos</a></li>
             <li><a href="#outreach">Outreach</a></li>
@@ -51,6 +60,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    
 
     <!-- About Section -->
     <section id="about">
@@ -472,7 +482,7 @@
             <img src="images/IMG_1600.JPG" alt="Image 3">
             <img src="images/IMG_1602.JPG" alt="Image 3">
         </div>
-        <div class="photogallery-videos">
+        <div class="memories">
             <video controls>
                 <source src="images/Snapchat-878748599.mp4" type="video/mp4">
                 Your browser does not support the video tag.
