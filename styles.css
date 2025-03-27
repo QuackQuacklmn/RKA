@@ -331,7 +331,7 @@ footer {
 
 /* The photogallery itself */
 .photogallery {
-    column-count: 8; /* Adjust as needed */
+    column-count: 4; /* Adjust as needed */
     column-gap: 5px;
     width: 100%; /* Ensures it fills the container */
     padding: 0; /* No extra padding inside */
