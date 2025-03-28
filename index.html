@@ -198,6 +198,61 @@
                 border-radius: 8px;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
+
+
+            #relic-recovery {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgb(31, 30, 30);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(207, 207, 7, 0.279);
+            display: flex; /* Align sections horizontally */
+            justify-content: space-between;
+            flex-wrap: nowrap; /* Prevents wrapping unless screen is too small */
+            gap: 10px;
+            }
+
+            #relic-recovery .section {
+            flex: 1; /* Each section takes equal width */
+            min-width: 22%; /* Ensures they stay roughly a quarter width */
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            }
+
+            /* Banner Section (Leftmost) */
+            #relic-recovery .banner img {
+            width: 100%;
+            border-radius: 10px;
+            }
+
+            /* Competition & Awards Section */
+            #relic-recovery .competition {
+            text-align: left;
+            color: white;
+            }
+
+            /* Mini Gallery Section */
+            #relic-recovery .mini-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+            }
+
+            #relic-recovery .mini-gallery img {
+            width: 90px;
+            height: auto;
+            border-radius: 5px;
+            }
+
+            /* Video Section (Rightmost) */
+            #relic-recovery .season-vid iframe {
+            width: 100%;
+            border-radius: 10px;
+            }
+
         </style>
         
         <script>
@@ -251,30 +306,22 @@
         </div>
 
         <div id="relic-recovery" class="season-details">
-            <h2>Relic Recovery (2017-2018)</h2>
-            <h3>Regionals & Awards</h3>
-            <p>Details about regionals and awards.</p>
-            <h3>Nationals & Awards</h3>
-            <p>Australia WAC - 2nd Inspire</p>
-            <h3>Worlds & Awards</h3>
-            <p>31st Houston World Championships</p>
-        
-            <div class="banner">
+            <div class="section banner"> 
                 <img src="images/Relic_1-removebg-preview.png" alt="Relic Recovery Logo">
                 <p>Rookie Year 1st Gen 12993</p>
             </div>
-        
-            <!-- Video Section -->
-            <div class="season-vid">
-                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 900px; margin: auto;">
-                    <div>
-                        <iframe width="200" height="112" src="https://www.youtube.com/embed/PfUI9X_DEB0"></iframe>
-                        <p style="text-align: center;">Powerplay Robot Reveal</p>
-                    </div>
-                </div>
+            
+            <div class="competition">
+                <h2>Relic Recovery (2017-2018)</h2>
+                <h3>Regionals & Awards</h3>
+                <p>Details about regionals and awards.</p>
+                <h3>Nationals & Awards</h3>
+                <p>Australia WAC - 2nd Inspire</p>
+                <h3>Worlds & Awards</h3>
+                <p>31st Houston World Championships</p>    
             </div>
-        
-            <!-- Mini Gallery -->
+
+                        <!-- Mini Gallery -->
             <div class="mini-gallery">
                 <img src="images/mini1.jpg" alt="Mini Image 1">
                 <img src="images/mini2.jpg" alt="Mini Image 2">
@@ -286,6 +333,16 @@
                 <img src="images/mini8.jpg" alt="Mini Image 8">
                 <img src="images/mini9.jpg" alt="Mini Image 9">
             </div>
+        
+            <!-- Video Section -->
+            <div class="season-vid">
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 900px; margin: auto;">
+                    <div>
+                        <iframe width="200" height="112" src="https://www.youtube.com/embed/PfUI9X_DEB0"></iframe>
+                        <p style="text-align: center;">Powerplay Robot Reveal</p>
+                    </div>
+                </div>
+            </div>       
         </div> 
 
         <div id="Rover Ruckus" class="season-details">
