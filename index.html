@@ -102,109 +102,107 @@
         <p>Worlds robot: Meet Sentinel.</p>
     </section>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FTC Seasons</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                background-color: #070707;
-                color: white;
-            }
-    
-            h1 {
-                margin-bottom: 20px;
-            }
-    
-            /* Season Card Layout */
-            .season-container {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-    
-            .season-card {
-                width: 15%;
-                background-color: rgb(54, 52, 52);
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                padding: 10px;
-                cursor: pointer;
-                transition: transform 0.2s, box-shadow 0.2s;
-            }
-    
-            .season-card:hover {
-                transform: scale(1.05);
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            }
-    
-            .season-card img {
-                width: 100%;
-                border-radius: 10px;
-            }
-    
-            .season-card h2 {
-                font-size: 16px;
-                color: gold;
-                margin-top: 5px;
-            }
-    
-            /* Season Details */
-            .season-details {
-                display: none;
-                margin-top: 20px;
-                padding: 15px;
-                background-color: rgb(31, 30, 30);
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(207, 207, 7, 0.279);
-                max-width: 900px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-    
-            /* Mini Gallery */
-            .mini-gallery {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                gap: 10px;
-                justify-content: center;
-                margin-top: 15px;
-            }
-    
-            .mini-gallery img {
-                width: 100%;
-                height: auto;
-                border-radius: 5px;
-                transition: transform 0.3s;
-            }
-    
-            .mini-gallery img:hover {
-                transform: scale(1.1);
-            }
-    
-            /* Video Section */
-            .season-vid {
-                display: flex;
-                justify-content: center;
-                margin-top: 20px;
-            }
-    
-            .season-vid iframe {
-                border-radius: 8px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            }
-        </style>
-        
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTC Seasons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #070707;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Season Card Layout */
+        .season-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .season-card {
+            width: 15%;
+            background-color: rgb(54, 52, 52);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .season-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .season-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .season-card h2 {
+            font-size: 16px;
+            color: gold;
+            margin-top: 5px;
+        }
+
+        /* Season Details */
+        .season-details {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgb(31, 30, 30);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(207, 207, 7, 0.279);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Mini Gallery */
+        .mini-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .mini-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .mini-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Video Section */
+        .season-vid {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .season-vid iframe {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
         <script>
-            function toggleSeason(id) {
-                let season = document.getElementById(id);
+            function toggleSeason(seasonId) {
+                var season = document.getElementById(seasonId);
                 if (season.style.display === "none" || season.style.display === "") {
-                    document.querySelectorAll('.season-details').forEach(el => el.style.display = "none");
                     season.style.display = "block";
                 } else {
                     season.style.display = "none";
@@ -217,9 +215,9 @@
         <h1>FTC Seasons Overview</h1>
     
         <div class="season-container">
-            <div class="season-card" onclick="toggleSeason('relic-recovery')">
-                <img src="images/relic_recovery_banner.jpg" alt="Relic Recovery">
-                <h2>Relic Recovery</h2>
+            <div class="season-card" onclick="toggleSeason('Relic Recovery')">
+                <img src="images/Skystone-team.webp" alt="Relic Recovery">
+                <h2>Relic Recovery (2017-2018)</h2>
             </div>
             <div class="season-card" onclick="toggleSeason('Rover Ruckus')">
                 <img src="images/Skystone-team.webp" alt="Rover Ruckus">
