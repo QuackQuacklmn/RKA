@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,10 +36,14 @@
                     if (e.key === "Backspace" && input.value.length === 0 && index > 0) {
                         pinInputs[index - 1].focus(); // Move back on delete
                     }
+                    if (e.key === "Enter") {
+                        checkPIN(); // Allow pressing "Enter" to submit PIN
+                    }
                 });
             });
 
             document.getElementById("submit-pin").addEventListener("click", checkPIN);
+            pinInputs[0].focus(); // Auto-focus first input
         });
     </script>
     <style>
@@ -111,120 +115,21 @@
             </ul>
         </nav>
 
-    <section id="memories">
-        <h2>Memories</h2>
-        <div class="photogallery-videos">
-            <video controls>
-                <source src="images/Snapchat-878748599.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <section id="memories">
+            <h2>Memories</h2>
+            <div class="photogallery-videos">
+                <video controls>
+                    <source src="images/Snapchat-878748599.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
-            <video controls>
-                <source src="images/VID_20250326_085923_603.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121043_746.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121048_080.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121051_219.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121056_096.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121101_380.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121107_907.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121111_408.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121116_731.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121121_787.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121126_698.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121133_989.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121138_800.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121143_460.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121147_942.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121152_694.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121203_187.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121212_779.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121216_214.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121220_097.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <video controls>
-                <source src="images/VID_20250326_121224_304.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
+                <video controls>
+                    <source src="images/VID_20250326_085923_603.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </div>
 
 </body>
 </html>
