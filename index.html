@@ -154,18 +154,25 @@
                 margin-top: 5px;
             }
     
-            /* Season Details */
             .season-details {
-                display: none;
-                margin-top: 20px;
-                padding: 15px;
-                background-color: rgb(31, 30, 30);
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(207, 207, 7, 0.279);
-                max-width: 900px;
-                margin-left: auto;
-                margin-right: auto;
-            }
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(31, 30, 30);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(207, 207, 7, 0.279);
+    display: flex; /* Make the subdivisions align horizontally */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: space-between; /* Space elements evenly */
+}
+
+.season-section {
+    flex: 1; /* Each section takes equal space */
+    min-width: 22%; /* Ensures they stay at around a quarter width */
+    padding: 10px;
+    box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
     
             /* Mini Gallery */
             .mini-gallery {
@@ -253,42 +260,50 @@
         </div>
 
         <div id="relic-recovery" class="season-details">
-            <h2>Relic Recovery (2017-2018)</h2>
-            <h3>Regionals & Awards</h3>
-            <p>Details about regionals and awards.</p>
-            <h3>Nationals & Awards</h3>
-            <p>Australia WAC - 2nd Inspire</p>
-            <h3>Worlds & Awards</h3>
-            <p>31st Houston World Championships</p>
-        
-            <div class="banner">
+            <div class="season-division">
+                <div class="season-text"></div>
+                <h2>Relic Recovery (2017-2018)</h2>
+                <h3>Regionals & Awards</h3>
+                <p>Details about regionals and awards.</p>
+                <h3>Nationals & Awards</h3>
+                <p>Australia WAC - 2nd Inspire</p>
+                <h3>Worlds & Awards</h3>
+                <p>31st Houston World Championships</p>
+                </div>
+            </div>
+
+            <div class="season-division">
+                <div class="banner">
                 <img src="images/Relic_1-removebg-preview.png" alt="Relic Recovery Logo">
                 <p>Rookie Year 1st Gen 12993</p>
-            </div>
-        
-            <!-- Video Section -->
-            <div class="season-vid">
-                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 900px; margin: auto;">
-                    <div>
-                        <iframe width="200" height="112" src="https://www.youtube.com/embed/PfUI9X_DEB0"></iframe>
-                        <p style="text-align: center;">Powerplay Robot Reveal</p>
-                    </div>
                 </div>
             </div>
         
-            <!-- Mini Gallery -->
-            <div class="mini-gallery">
-                <img src="images/mini1.jpg" alt="Mini Image 1">
-                <img src="images/mini2.jpg" alt="Mini Image 2">
-                <img src="images/mini3.jpg" alt="Mini Image 3">
-                <img src="images/mini4.jpg" alt="Mini Image 4">
-                <img src="images/mini5.jpg" alt="Mini Image 5">
-                <img src="images/mini6.jpg" alt="Mini Image 6">
-                <img src="images/mini7.jpg" alt="Mini Image 7">
-                <img src="images/mini8.jpg" alt="Mini Image 8">
-                <img src="images/mini9.jpg" alt="Mini Image 9">
+            <div class="season-division">
+                <div class="season-vid">
+                    <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 900px; margin: auto;">
+                        <div>
+                            <iframe width="200" height="112" src="https://www.youtube.com/embed/PfUI9X_DEB0"></iframe>
+                            <p style="text-align: center;">Powerplay Robot Reveal</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> 
+            
+            <div class="season-division">
+                <div class="mini-gallery">
+                    <img src="images/mini1.jpg" alt="Mini Image 1">
+                    <img src="images/mini2.jpg" alt="Mini Image 2">
+                    <img src="images/mini3.jpg" alt="Mini Image 3">
+                    <img src="images/mini4.jpg" alt="Mini Image 4">
+                    <img src="images/mini5.jpg" alt="Mini Image 5">
+                    <img src="images/mini6.jpg" alt="Mini Image 6">
+                    <img src="images/mini7.jpg" alt="Mini Image 7">
+                    <img src="images/mini8.jpg" alt="Mini Image 8">
+                    <img src="images/mini9.jpg" alt="Mini Image 9">
+                </div>
+            </div> 
+        </div>
 
         <div id="Rover Ruckus" class="season-details">
             <h2>Rover Ruckus (2018-2019)</h2>
