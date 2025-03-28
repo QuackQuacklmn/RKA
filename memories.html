@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enter PIN</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const pinContainer = document.getElementById("pin-container");
@@ -13,7 +12,7 @@
             const content = document.getElementById("content");
 
             function checkPIN() {
-                let enteredPIN = "5#47";
+                let enteredPIN = "";
                 pinInputs.forEach(input => enteredPIN += input.value);
 
                 if (enteredPIN === correctPIN) {
