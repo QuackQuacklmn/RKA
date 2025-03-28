@@ -266,7 +266,7 @@ footer {
 
 /* Full control container for the gallery */
 .photogallery-container {
-    width: 100vw; /* Full viewport width */
+    width: 130vw; /* Full viewport width */
     max-width: 100%; /* Prevents overflow issues */
     padding: 0 2vw; /* Adjust side spacing as needed */
     margin: 0 auto; /* Centers if needed */
