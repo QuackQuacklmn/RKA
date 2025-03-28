@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const seasons = ["Relic Recovery", "Rover Ruckus","Skystone", "Ultimate_Goal", "Freight_Frenzy","Powerplay", "Centerstage", "Into_The_Deep"]; // Add all seasons
-    seasons.forEach(season => {
-        const button = document.getElementById(`toggle-${season}`);
-        const content = document.getElementById(`content-${season}`);
-        
-        if (button && content) {
-            button.addEventListener("click", function () {
-                content.style.display = (content.style.display === "none") ? "block" : "none";
+    const seasons = ["relic-recovery", "rover-ruckus", "skystone", "ultimate-goal", "freight-frenzy", "powerplay", "centerstage", "into-the-deep"];
+    const seasonCards = document.querySelectorAll(".season-card");
+    
+    seasonCards.forEach(card => {
+        card.addEventListener("click", function () {
+            const seasonId = this.getAttribute("onclick").match(/'([^']+)'/)[1]; // Extract season ID from onclick attribute
+            
+            seasons.forEach(season => {
+                const content = document.getElementById(season);
+                if (content) {
+                    content.style.display = (season === seasonId) ? "flex" : "none"; // Show only the clicked season
+                }
             });
-        }
+        });
     });
 });
-
-
-
