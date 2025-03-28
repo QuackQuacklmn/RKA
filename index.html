@@ -140,7 +140,7 @@ h1 {
 
 .season-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(114, 84, 2, 0.3);
 }
 
 .season-card img {
@@ -206,7 +206,7 @@ h1 {
 }
 
 /* Video Section (Rightmost) */
-.season-details .season-vid iframe {
+.season-details .season-video {
     width: 100%;
     border-radius: 10px;
 }
@@ -216,13 +216,17 @@ h1 {
         
         <script>
             function toggleSeason(seasonId) {
-                var season = document.getElementById(seasonId);
-                if (season.style.display === "none" || season.style.display === "") {
-                    season.style.display = "block";
-                } else {
-                    season.style.display = "none";
-                }
-            }
+                const allSeasons = document.querySelectorAll(".season-details"); // Select all season detail sections
+                allSeasons.forEach(season => {
+                    if (season.id === seasonId) {
+            // Toggle only the clicked season while keeping the correct display style
+                season.style.display = (season.style.display === "none" || season.style.display === "") ? "flex" : "none";
+            } else {
+            season.style.display = "none"; // Hide all other seasons
+        }
+    });
+}
+
         </script>
     </head>
     <body>
