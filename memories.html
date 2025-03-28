@@ -1,12 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memories</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script>
+        function checkPIN() {
+            const correctPIN = "1234"; // Change this to your actual PIN
+            let userPIN = prompt("Enter the PIN to access this page:");
+            
+            if (userPIN !== correctPIN) {
+                alert("Incorrect PIN. Redirecting to home page.");
+                window.location.href = "index.html"; // Redirect to home page
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="checkPIN()">
 
     <nav class="navbar">
         <ul>
@@ -128,6 +139,18 @@
             </video>
         </div>
     </section>
+
+    <script>
+    function checkPIN(5847) {
+        const correctPIN = "1234"; // Change this to your actual PIN
+        let userPIN = prompt("Enter the PIN to access this page:");
+        
+        if (userPIN !== correctPIN) {
+            alert("Incorrect PIN. Redirecting to home page.");
+            window.location.href = "index.html"; // Redirect to home page
+        }
+    }
+    </script>
 
 </body>
 </html>
