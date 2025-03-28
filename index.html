@@ -109,103 +109,108 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FTC Seasons</title>
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                background-color: #070707;
-                color: white;
-            }
-    
-            h1 {
-                margin-bottom: 20px;
-            }
-    
-            /* Season Card Layout */
-            .season-container {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-    
-            .season-card {
-                width: 15%;
-                background-color: rgb(54, 52, 52);
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                padding: 10px;
-                cursor: pointer;
-                transition: transform 0.2s, box-shadow 0.2s;
-            }
-    
-            .season-card:hover {
-                transform: scale(1.05);
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            }
-    
-            .season-card img {
-                width: 100%;
-                border-radius: 10px;
-            }
-    
-            .season-card h2 {
-                font-size: 16px;
-                color: gold;
-                margin-top: 5px;
-            }
-    
-            #relic-recovery {
-            display: none;
-            margin-top: 20px;
-            padding: 15px;
-            background-color: rgb(31, 30, 30);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(207, 207, 7, 0.279);
-            display: flex; /* Align sections horizontally */
-            justify-content: space-between;
-            flex-wrap: nowrap; /* Prevents wrapping unless screen is too small */
-            gap: 10px;
-            }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #070707;
+    color: white;
+}
 
-            #relic-recovery .section {
-            flex: 1; /* Each section takes equal width */
-            min-width: 22%; /* Ensures they stay roughly a quarter width */
-            padding: 10px;
-            box-sizing: border-box;
-            text-align: center;
-            }
+h1 {
+    margin-bottom: 20px;
+}
 
-            /* Banner Section (Leftmost) */
-            #relic-recovery .banner img {
-            width: 100%;
-            border-radius: 10px;
-            }
+/* Season Card Layout */
+.season-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-            /* Competition & Awards Section */
-            #relic-recovery .competition {
-            text-align: left;
-            color: white;
-            }
+.season-card {
+    width: 15%;
+    background-color: rgb(54, 52, 52);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
-            /* Mini Gallery Section */
-            #relic-recovery .mini-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            justify-content: center;
-            }
+.season-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
 
-            #relic-recovery .mini-gallery img {
-            width: 90px;
-            height: auto;
-            border-radius: 5px;
-            }
+.season-card img {
+    width: 100%;
+    border-radius: 10px;
+}
 
-            /* Video Section (Rightmost) */
-            #relic-recovery .season-vid iframe {
-            width: 100%;
-            border-radius: 10px;
-            }
+.season-card h2 {
+    font-size: 16px;
+    color: gold;
+    margin-top: 5px;
+}
+
+/* Season Details - Universal Layout */
+.season-details {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(31, 30, 30);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(207, 207, 7, 0.279);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.season-details .section {
+    flex: 1;
+    min-width: 22%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Banner Section (Leftmost) */
+.season-details .banner img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Competition & Awards Section */
+.season-details .competition {
+    text-align: left;
+    color: white;
+}
+
+/* Mini Gallery Section */
+.season-details .mini-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.season-details .mini-gallery img {
+    width: 90px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Video Section (Rightmost) */
+.season-details .season-vid iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
 
         </style>
         
