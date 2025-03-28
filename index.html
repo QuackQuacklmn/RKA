@@ -156,7 +156,7 @@ h1 {
 
 /* Season Details - Universal Layout */
 .season-details {
-    display: none;
+    display: none; /* Hidden initially */
     margin-top: 20px;
     padding: 15px;
     background-color: rgb(31, 30, 30);
@@ -215,13 +215,21 @@ h1 {
         </style>
         
         <script>
-            function toggleSeason(seasonId) {
-                const allSeasons = document.querySelectorAll(".season-details"); // Select all season detail sections
-                allSeasons.forEach(season => {
-                    if (season.id === seasonId) {
+document.addEventListener("DOMContentLoaded", function () {
+    const allSeasons = document.querySelectorAll(".season-details"); // Get all season sections
+    allSeasons.forEach(season => {
+        season.style.display = "none"; // Ensure they are all hidden at start
+    });
+});
+
+function toggleSeason(seasonId) {
+    const allSeasons = document.querySelectorAll(".season-details"); // Select all season detail sections
+
+    allSeasons.forEach(season => {
+        if (season.id === seasonId) {
             // Toggle only the clicked season while keeping the correct display style
-                season.style.display = (season.style.display === "none" || season.style.display === "") ? "flex" : "none";
-            } else {
+            season.style.display = (season.style.display === "none" || season.style.display === "") ? "flex" : "none";
+        } else {
             season.style.display = "none"; // Hide all other seasons
         }
     });
