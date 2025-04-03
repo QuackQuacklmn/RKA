@@ -457,3 +457,45 @@ footer {
     z-index: 1;
     font-family: 'Orbitron', sans-serif;
 }
+
+.outreach-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.outreach-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #FFD700;
+}
+
+.outreach-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #FFD700;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.outreach-btn:hover {
+    color: #FFC107;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.outreach-content {
+    display: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
