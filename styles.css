@@ -267,12 +267,27 @@ footer {
 }
 
 /* Full control container for the gallery */
-.photogallery-container {
-    width: 130vw; /* Full viewport width */
-    max-width: 100%; /* Prevents overflow issues */
-    padding: 0 2vw; /* Adjust side spacing as needed */
-    margin: 0 auto; /* Centers if needed */
-}
+<div class="photogallery-container">
+    <div class="photogallery">
+        <!-- First 20 images stay visible -->
+        <img src="photo1.jpg" alt="Photo 1">
+        <img src="photo2.jpg" alt="Photo 2">
+        <!-- Add 18 more images here -->
+
+        <!-- Hidden images will be shown on a separate page -->
+        <div class="hidden-photos">
+            <img src="photo21.jpg" alt="Photo 21">
+            <img src="photo22.jpg" alt="Photo 22">
+            <!-- More hidden images -->
+        </div>
+    </div>
+
+    <!-- Gradient fade effect -->
+    <div class="fade-effect"></div>
+
+    <!-- "Show More" Button -->
+    <a href="full-gallery.html" class="show-more-btn">Show More</a>
+</div>
 
 /* The photogallery itself */
 .photogallery {
