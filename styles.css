@@ -16,7 +16,7 @@ body {
 /* Hero Section */
 .hero {
     background: url('images/team-photo.jpg') no-repeat center center/cover;
-    height: calc(100vh - 80px); /* Subtracts navbar height */
+    height: calc(100vh - 400px); /* Subtracts navbar height */
     display: flex;
     align-items: center;
     justify-content: center;
