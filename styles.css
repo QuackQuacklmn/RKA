@@ -75,14 +75,47 @@ body {
     background-color: #FFC107;
 }
 
+/* === STICKY ARROW & TOGGLE NAVBAR === */
+
+/* Sticky Toggle Arrow */
+.nav-arrow {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Rotate the arrow when menu is open */
+.nav-arrow.rotated {
+    transform: translateX(-50%) rotate(180deg);
+}
+
 /* Navbar Container */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.6); /* translucent black */
+    background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
+    top: 50px; /* below the arrow */
+    left: 0;
     width: 100%;
-    top: 0;
     z-index: 1000;
     padding: 10px 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    max-height: 300px; /* show when open */
+}
+
+/* Hide nav when collapsed */
+.navbar.hidden {
+    max-height: 0;
+    padding: 0;
 }
 
 /* Nav List */
@@ -105,21 +138,31 @@ body {
 /* Nav Links */
 .navbar a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem; /* smaller font */
-    color: white;
-    text-decoration: none;
-    white-space: nowrap; /* prevent wrapping to new line */
-}
-
-/* Dropdown Styling */
-.dropdown-content {
-    background-color: rgba(0, 0, 0, 0.85);
-}
-
-.dropdown-content a {
     font-size: 0.8rem;
     color: white;
-    padding: 10px 15px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Dropdown container setup */
+.dropdown {
+    position: relative;
+}
+
+/* Hide dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1002;
+}
+
+/* Show dropdown on active class (click only) */
+.dropdown.active .dropdown-content {
     display: block;
 }
 
@@ -127,17 +170,9 @@ body {
 .navbar a:hover,
 .dropdown-content a:hover {
     text-decoration: underline;
-}
-
-
-.dropdown-content a:hover {
     background-color: #575757;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 body {
     padding-top: 60px; /* adjust depending on navbar height */

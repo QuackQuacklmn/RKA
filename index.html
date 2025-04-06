@@ -46,6 +46,17 @@
     </script>
 </head>
 
+<script>
+    const navToggle = document.getElementById('navToggle');
+    const navbar = document.querySelector('.navbar');
+
+    navToggle.addEventListener('click', () => {
+        navbar.classList.toggle('hidden');
+        navToggle.classList.toggle('rotated');
+    });
+</script>
+
+
 <body>
 
     <!-- Hero Section -->
@@ -57,6 +68,8 @@
             </div>
         </div>
     </header>
+
+    <div id="navToggle" class="nav-arrow">&#x25BC;</div>
 
     <nav class="navbar">
         <ul>
