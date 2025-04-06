@@ -560,17 +560,26 @@ h2 {
     border-radius: 8px; /* Optional: for rounded corners */
 }
 
-/* Gallery Section */
+.gallery-container {
+    width: 130vw; /* Full viewport width */
+    max-width: 100%; /* Prevents overflow issues */
+    padding: 0 2vw; /* Adjust side spacing as needed */
+    margin: 0 auto; /* Centers if needed */
+}
+
+/* The photogallery itself */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 15px;
-    margin-top: 40px;
+    column-count: 4; /* Adjust as needed */
+    column-gap: 5px;
+    width: 100%; /* Ensures it fills the container */
+    padding: 0; /* No extra padding inside */
 }
 
 .gallery-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures images fill their boxes, cropping if needed */
-    border-radius: 8px;
+    display: block;
+    width: 100%; /* Ensures they fully fit within column */
+    margin-bottom: 5px; /* Keeps spacing uniform */
+    break-inside: avoid; /* Prevents breaking between columns */
 }
+
+
