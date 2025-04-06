@@ -593,8 +593,8 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 40px auto;
-    max-width: 90%;
+    margin: 5px auto;
+    max-width: 98%;
     flex-wrap: wrap;
 }
 .subsystem {
