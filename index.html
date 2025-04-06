@@ -48,6 +48,10 @@
 
 <body>
 
+    <div class="hamburger" id="hamburger">
+        &#9776;
+    </div>
+    
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-overlay">
@@ -94,6 +98,39 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const hamburger = document.getElementById('hamburger');
+    
+        let lastScrollTop = 0;
+    
+        // Show hamburger + collapse navbar when scrolling down
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    
+            if (scrollTop > 10) {
+                navbar.classList.add('mobile-hidden');
+            } else {
+                navbar.classList.remove('mobile-hidden');
+            }
+    
+            lastScrollTop = scrollTop;
+        });
+    
+        // Hamburger menu toggle
+        hamburger.addEventListener("click", () => {
+            navbar.classList.toggle('mobile-active');
+        });
+    
+        // Clicking outside closes menu
+        document.addEventListener("click", (e) => {
+            if (!navbar.contains(e.target) && !hamburger.contains(e.target)) {
+                navbar.classList.remove('mobile-active');
+            }
+        });
+    </script>
+    
 
 </body>
 </html>
