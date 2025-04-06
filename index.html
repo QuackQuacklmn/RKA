@@ -273,6 +273,19 @@ h1 {
     border-radius: 5px;
 }
 
+.season-details .mini-gallery1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 3 rows */
+    gap: 5px;
+    justify-content: center;
+}
+
+.season-details .mini-gallery img1 {
+    width: 130px;
+    height: auto;
+}
+
 /* Video Section (Rightmost) */
 .season-details .season-video {
     display: flex; /* Enables flexbox */
@@ -366,7 +379,7 @@ function toggleSeason(seasonId) {
             </div>
 
                         <!-- Mini Gallery -->
-            <div class="mini-gallery">
+            <div class="mini-gallery1">
                 <img src="images/old robokings/image001 (1).jpg" alt="Mini Image 1">
                 <img src="images/old robokings/Relic Recovery 3.jpg" alt="Mini Image 2">
                 <img src="images/old robokings/Relic Recovery 4.jpg" alt="Mini Image 3">
