@@ -76,87 +76,53 @@ body {
 }
 
 /* Navbar Container */
-/* NAVBAR BASE STYLES */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); /* translucent black */
     position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 999;
+    top: 0;
+    z-index: 1000;
     padding: 10px 0;
-    transition: top 0.3s ease;
 }
 
+/* Nav List */
 .navbar ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
+/* Nav Items */
 .navbar li {
     margin: 0 10px;
 }
 
+/* Nav Links */
 .navbar a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* smaller font */
     color: white;
     text-decoration: none;
-    white-space: nowrap;
+    white-space: nowrap; /* prevent wrapping to new line */
 }
 
-/* HAMBURGER MENU ICON */
-.hamburger {
-    display: none;
-    font-size: 1.8rem;
-    color: white;
-    position: fixed;
-    top: 15px;
-    left: 20px;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-/* MOBILE NAV STYLES (vertical dropdown) */
-.navbar.mobile-active ul {
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.navbar.mobile-hidden ul {
-    display: none;
-}
-
-/* Make sure dropdowns look good on mobile */
+/* Dropdown Styling */
 .dropdown-content {
-    position: static;
-    background-color: rgba(0, 0, 0, 0.9);
-    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* Responsive trigger */
-@media screen and (max-width: 900px) {
-    .hamburger {
-        display: block;
-    }
-
-    .navbar ul {
-        display: none;
-    }
-
-    .navbar.mobile-active ul {
-        display: flex;
-    }
+.dropdown-content a {
+    font-size: 0.8rem;
+    color: white;
+    padding: 10px 15px;
+    display: block;
 }
+
 /* Optional: Add hover effects */
 .navbar a:hover,
 .dropdown-content a:hover {
