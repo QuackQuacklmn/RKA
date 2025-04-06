@@ -15,9 +15,8 @@ body {
 
 /* Hero Section */
 .hero {
-    padding-top: 80px; /* Enough space for the fixed navbar */
     background: url('images/team-photo.jpg') no-repeat center center/cover;
-    height: calc(100vh - 400px); /* Subtracts navbar height */
+    height: calc(100vh - 60px); /* Subtracts navbar height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,109 +74,69 @@ body {
     background-color: #FFC107;
 }
 
-/* === STICKY ARROW & TOGGLE NAVBAR === */
-
-/* Sticky Toggle Arrow */
-.nav-arrow {
-    position: fixed;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1001;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 6px 12px;
-    border-radius: 8px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-/* Rotate the arrow when menu is open */
-.nav-arrow.rotated {
-    transform: translateX(-50%) rotate(180deg);
-}
-
-/* Navbar Container */
+/* Navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
-    top: 50px; /* below the arrow */
-    left: 0;
+    top: 0;
     width: 100%;
+    background: rgba(18, 18, 18, 0.9);
+    padding: 15px 0;
+    text-align: center;
     z-index: 1000;
-    padding: 10px 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
-    max-height: 300px; /* show when open */
 }
 
-/* Hide nav when collapsed */
-.navbar.hidden {
-    max-height: 0;
-    padding: 0;
-}
-
-/* Nav List */
 .navbar ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
+    gap: 20px;
     padding: 0;
-    flex-wrap: nowrap;
-    overflow-x: auto;
 }
 
-/* Nav Items */
-.navbar li {
-    margin: 0 10px;
+.navbar ul li {
+    display: inline;
 }
 
-/* Nav Links */
-.navbar a {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
-    color: white;
+.navbar ul li a {
     text-decoration: none;
-    white-space: nowrap;
+    color: #FFD700;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* Dropdown container setup */
+.navbar ul li a:hover {
+    color: #FFC107;
+}
+
 .dropdown {
     position: relative;
 }
 
-/* Hide dropdown content by default */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: #333;
     min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1002;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-/* Show dropdown on active class (click only) */
-.dropdown.active .dropdown-content {
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
+    text-align: left;
 }
 
-/* Optional: Add hover effects */
-.navbar a:hover,
 .dropdown-content a:hover {
-    text-decoration: underline;
     background-color: #575757;
 }
 
-
-body {
-    padding-top: 60px; /* adjust depending on navbar height */
-    backdrop-filter: blur(10px);
-
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Section Styling */
@@ -539,53 +498,4 @@ footer {
     font-size: 1rem;
     color: #ffffff;
     line-height: 1.6;
-}
-
-/* General body and navbar styling */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* CenterStage Section */
-#CenterStage {
-    padding: 20px;
-    text-align: center;
-}
-
-h1, h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-/* Simplicity Row */
-.Simplicity {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 40px;
-}
-
-.Simplicity img {
-    width: 33%; /* Each image takes 1/3 of the row */
-    height: auto;
-    border-radius: 8px; /* Optional: for rounded corners */
-}
-
-/* Gallery Section */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 15px;
-    margin-top: 40px;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures images fill their boxes, cropping if needed */
-    border-radius: 8px;
 }
