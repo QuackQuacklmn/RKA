@@ -4,48 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prometheus - ITD Pre Worlds</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+
+        h1 {
+            color: gold;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        h2, h3, h4 {
+            color: gold;
+        }
+
+        .center-image {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .robot-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .robot-row img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .subsystems-title {
+            margin-left: 10px;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .subsystem-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 5px;
+            gap: 10px;
+        }
+
+        .subsystem-image-container {
+            width: 30%;
+            position: relative;
+        }
+
+        .subsystem-image-container h3 {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .subsystem-image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .description-box, .gallery-box, .info-box {
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .description-box {
+            width: 30%;
+        }
+
+        .gallery-box {
+            width: 20%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5px;
+        }
+
+        .gallery-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .info-box {
+            width: 20%;
+        }
+
+        .subgallery-title {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .photo-gallery img {
+            width: 200px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
-<bodyI>
+<body>
+    <h1>Prometheus</h1>
 
-    <h1 class="gold-title">Prometheus</h1>
+    <div class="center-image">
+        <img src="path/to/main-robot.jpg" alt="Main Robot" style="width: 60%; border-radius: 10px;">
+    </div>
 
-    <img src="images/ITD b4 worlds/Untitled (3).png" alt="Main Robot" class="center-img">
-
-    <div class="three-img-row">
+    <div class="robot-row">
         <img src="path/to/regionals-cad.jpg" alt="Regionals CAD">
         <img src="path/to/regionals-bot.jpg" alt="Regionals Bot">
         <img src="path/to/nationals-cad.jpg" alt="Nationals CAD">
     </div>
 
-    <h2 class="subheading">Subsystems</h2>
+    <h2 class="subsystems-title">Subsystems</h2>
 
-    <div class="subsystem-row">
-        <div class="subsystem">
-            <h3 class="subsystem-title">Intake</h3>
-            <img src="images/ITD b4 worlds/Untitled (4).png" alt="Intake">
-            <p>Description of the intake system goes here.</p>
+    <!-- Subsystem 1: Intake -->
+    <div class="subsystem-section">
+        <div class="subsystem-image-container">
+            <h3>Intake</h3>
+            <img src="path/to/intake-main.jpg" alt="Intake Subsystem">
         </div>
-        <div class="subsystem">
-            <h3 class="subsystem-title">Outake</h3>
-            <img src="path/to/outake.jpg" alt="Outake">
-            <p>Description of the outake system goes here.</p>
+        <div class="description-box">
+            <p>This subsystem uses compliant wheels and a custom funnel to smoothly intake pixels at high speed while ensuring minimal jams under pressure.</p>
         </div>
-        <div class="subsystem">
-            <h3 class="subsystem-title">Hang</h3>
-            <img src="path/to/hang.jpg" alt="Hang">
-            <p>Description of the hang system goes here.</p>
+        <div class="gallery-box">
+            <img src="path/to/intake1.jpg">
+            <img src="path/to/intake2.jpg">
+            <img src="path/to/intake3.jpg">
+            <img src="path/to/intake4.jpg">
+        </div>
+        <div class="info-box">
+            <p>Powered by two motors with a 5:1 gear ratio, this subsystem was refined over three prototypes to reduce weight while increasing pixel retention.</p>
         </div>
     </div>
 
-    <h3 class="mini-subheading">Naats and Regionals Gallery</h3>
+    <!-- Repeat above block for Outtake and Hang -->
 
-    <div class="gallery1">
-        <img src="path/to/gallery1.jpg" alt="Gallery 1">
-        <img src="path/to/gallery2.jpg" alt="Gallery 2">
-        <img src="path/to/gallery3.jpg" alt="Gallery 3">
-        <!-- Add more images as needed -->
+    <div class="subsystem-section">
+        <div class="subsystem-image-container">
+            <h3>Outtake</h3>
+            <img src="path/to/outake-main.jpg" alt="Outake Subsystem">
+        </div>
+        <div class="description-box">
+            <p>The outtake was built for precision placement with a linear slide and pivoting claw for vertical alignment with the drone board.</p>
+        </div>
+        <div class="gallery-box">
+            <img src="path/to/outake1.jpg">
+            <img src="path/to/outake2.jpg">
+            <img src="path/to/outake3.jpg">
+            <img src="path/to/outake4.jpg">
+        </div>
+        <div class="info-box">
+            <p>This design won regional praise for being lightweight and responsive, thanks to its compact 3D-printed mounting and servo array.</p>
+        </div>
     </div>
 
+    <div class="subsystem-section">
+        <div class="subsystem-image-container">
+            <h3>Hang</h3>
+            <img src="path/to/hang-main.jpg" alt="Hang Subsystem">
+        </div>
+        <div class="description-box">
+            <p>Hang uses a dual-motor lift with steel cabling and lock latches for high-weight capacity and quick field reset.</p>
+        </div>
+        <div class="gallery-box">
+            <img src="path/to/hang1.jpg">
+            <img src="path/to/hang2.jpg">
+            <img src="path/to/hang3.jpg">
+            <img src="path/to/hang4.jpg">
+        </div>
+        <div class="info-box">
+            <p>Originally too slow, it was upgraded with higher torque motors and reverse braking mechanisms to withstand full match duration strain.</p>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <h4 class="subgallery-title">Nationals and Regionals Gallery</h4>
+    <div class="photo-gallery">
+        <img src="path/to/gallery1.jpg">
+        <img src="path/to/gallery2.jpg">
+        <img src="path/to/gallery3.jpg">
+        <img src="path/to/gallery4.jpg">
+    </div>
 </body>
 </html>
