@@ -75,14 +75,46 @@ body {
     background-color: #FFC107;
 }
 
+/* === NAVBAR STYLING WITH COLLAPSIBLE FUNCTIONALITY === */
+
+/* Sticky Toggle Arrow */
+.nav-arrow {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Rotate the arrow when menu is open */
+.nav-arrow.rotated {
+    transform: translateX(-50%) rotate(180deg);
+}
+
 /* Navbar Container */
 .navbar {
     background-color: rgba(0, 0, 0, 0.6); /* translucent black */
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 35px; /* slightly below the arrow */
     z-index: 1000;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+    max-height: 500px; /* default max height when open */
     padding: 10px 0;
+}
+
+/* Nav Collapsed (hidden) */
+.navbar.hidden {
+    max-height: 0;
+    padding: 0;
 }
 
 /* Nav List */
@@ -129,7 +161,6 @@ body {
     text-decoration: underline;
 }
 
-
 .dropdown-content a:hover {
     background-color: #575757;
 }
@@ -138,6 +169,7 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 body {
     padding-top: 60px; /* adjust depending on navbar height */
