@@ -15,6 +15,7 @@ body {
 
 /* Hero Section */
 .hero {
+    padding-top: 80px; /* Enough space for the fixed navbar */
     background: url('images/team-photo.jpg') no-repeat center center/cover;
     height: calc(100vh - 400px); /* Subtracts navbar height */
     display: flex;
@@ -74,61 +75,60 @@ body {
     background-color: #FFC107;
 }
 
-/* Navbar */
+/* Navbar Container */
 .navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* translucent black */
     position: fixed;
-    top: 0;
     width: 100%;
-    background: rgba(18, 18, 18, 0.9);
-    padding: 15px 0;
-    text-align: center;
+    top: 0;
     z-index: 1000;
+    padding: 10px 0;
 }
 
+/* Nav List */
 .navbar ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
-.navbar ul li {
-    display: inline;
+/* Nav Items */
+.navbar li {
+    margin: 0 10px;
 }
 
-.navbar ul li a {
+/* Nav Links */
+.navbar a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem; /* smaller font */
+    color: white;
     text-decoration: none;
-    color: #FFD700;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: 0.3s;
+    white-space: nowrap; /* prevent wrapping to new line */
 }
 
-.navbar ul li a:hover {
-    color: #FFC107;
-}
-
-.dropdown {
-    position: relative;
-}
-
+/* Dropdown Styling */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .dropdown-content a {
+    font-size: 0.8rem;
     color: white;
-    padding: 12px 16px;
-    text-decoration: none;
+    padding: 10px 15px;
     display: block;
-    text-align: left;
 }
+
+/* Optional: Add hover effects */
+.navbar a:hover,
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
 
 .dropdown-content a:hover {
     background-color: #575757;
@@ -137,6 +137,12 @@ body {
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+body {
+    padding-top: 60px; /* adjust depending on navbar height */
+    backdrop-filter: blur(10px);
+
 }
 
 /* Section Styling */
@@ -503,32 +509,6 @@ footer {
 /* General body and navbar styling */
 body {
     font-family: Arial, sans-serif;
-}
-
-.navbar {
-    background-color: #333;
-    padding: 10px;
-}
-
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.navbar ul li {
-    margin-right: 20px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navbar ul li a:hover {
-    text-decoration: underline;
 }
 
 /* CenterStage Section */
